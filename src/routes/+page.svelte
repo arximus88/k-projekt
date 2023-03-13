@@ -8,6 +8,12 @@ $: if (count %10 === 1 && count > 30) {
 		alert('count is dangerously high!');
 	}
 </script>
+
+<svelte:head>
+	<title>About</title>
+	<meta name="description" content="About this app" />
+</svelte:head>
+
 <h1>Transforming Your Digital Experience  {count} {count %10 === 1 ? 'time' : 'times'}</h1>
 <p>My name is Borys, a UI/UX designer with over 11 years of experience in the industry. 
     
