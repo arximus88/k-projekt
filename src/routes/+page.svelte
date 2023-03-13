@@ -1,2 +1,19 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	let count = 0;
+
+function incrementCount() {
+	count += 1;
+}
+$: if (count %10 === 1 && count > 30) {
+		alert('count is dangerously high!');
+	}
+</script>
+<h1>Transforming Your Digital Experience  {count} {count %10 === 1 ? 'time' : 'times'}</h1>
+<p>My name is Borys, a UI/UX designer with over 11 years of experience in the industry. 
+    
+    I bring a wealth of knowledge from working with companies such as Chegg and Upwork, and I have recently spent 4+ years as a Senior Product Designer at Virtually Human Studios, where I led the design process for ZED RUN their flagship product and Human Park game. 
+    
+    With my skills and expertise, I can help bring your digital vision to life. Check out my LinkedIn page to see some of my previous work and let's create something awesome together!"</p>
+<button on:click={incrementCount}>
+	Do not click HERE
+</button>
