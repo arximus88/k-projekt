@@ -1,5 +1,6 @@
 <script>
 	import Header from './Header.svelte';
+	import Navbar from './Navbar.svelte';
 	import './styles.css';
 </script>
 
@@ -10,6 +11,7 @@
 		<slot />
 	</main>
 
+	<Navbar />
 	<footer>
 		<p>v11 isit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 	</footer>
