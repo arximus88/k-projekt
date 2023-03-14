@@ -1,23 +1,25 @@
 <script>
-	// import { page } from '$app/stores';
+	import { page } from '$app/stores';
+	import Icon from "$lib/icons/Icons.svelte";
+
 </script>
 
 <header>
 	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/"><Icon name="user-edit" />Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
+				<a href="/projects"><Icon name="user-edit" />Projects</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/cats' ? 'page' : undefined}>
+				<a href="/cats"><Icon name="user-edit" />Cats</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/misc' ? 'page' : undefined}>
+				<a href="/misc"><Icon name="user-edit" />Misc</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
 </header>
 
@@ -31,16 +33,6 @@
 		display: flex;
 		justify-content: center;
 		--background: rgba(255, 255, 255, 0.7);
-	}
-
-	svg {
-		width: 2em;
-		height: 3em;
-		display: block;
-	}
-
-	path {
-		fill: var(--background);
 	}
 
 	ul {
@@ -78,7 +70,7 @@
 		height: 100%;
 		align-items: center;
 		padding: 0 0.5rem;
-		color: var(--color-text);
+		color: var(--tretiary-basic);
 		font-weight: 700;
 		font-size: 0.8rem;
 		text-transform: uppercase;
