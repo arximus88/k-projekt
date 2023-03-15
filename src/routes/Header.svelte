@@ -36,11 +36,11 @@
 		height: 100%;
 	}
 
-	.corner img {
+	/* .corner img {
 		width: 2em;
 		height: 2em;
 		object-fit: contain;
-	}
+	} */
 
 	a:hover {
 		color: var(--color-theme-1);

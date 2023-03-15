@@ -1,6 +1,6 @@
 <script>
-	import Icon from "$lib/icons/Icons.svelte";
-	let count = 0;
+	import Icon from "$lib/components/Icons.svelte";
+	let count = 0.1+0.2;
 
 function incrementCount() {
 	count += 1;
