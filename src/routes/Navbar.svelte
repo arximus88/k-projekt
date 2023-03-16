@@ -1,32 +1,26 @@
 <script>
 	import { page } from '$app/stores';
-	import Icon from '$lib/components/Icons.svelte';
+	import Icon from '$lib/components/Icons-new.svelte';
 </script>
 
-<header>
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a class="nav-link" href="/"> <Icon name="user-edit" size={12} />Home</a>
+				<a class="nav-link" href="/"> <Icon name="user-edit" size={16} />Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
-				<a class="nav-link" href="/projects"><Icon name="stars" />Projects</a>
+				<a class="nav-link" href="/projects"><Icon name="stars" size={16} />Projects</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/cats' ? 'page' : undefined}>
-				<a class="nav-link" href="/cats"><Icon name="presentation" />Cats</a>
+				<a class="nav-link" href="/cats"><Icon name="presentation" size={16} />Cats</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/misc' ? 'page' : undefined}>
-				<a class="nav-link" href="/misc"><Icon name="code-snippet" size={12} />Misc</a>
+				<a class="nav-link" href="/misc"><Icon name="code-snippet" size={16} />Misc</a>
 			</li>
 		</ul>
 	</nav>
-</header>
 
 <style>
-	header {
-		display: flex;
-		justify-content: center;
-	}
 
 	nav {
 		display: flex;
@@ -58,20 +52,24 @@
 		color: var(--tertiary-basic);
 		text-decoration: none;
 		display: flex;
-		gap: 12px;
+		gap: 8px;
 		height: 100%;
 		align-items: center;
 		padding: 0 0.5rem;
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 1rem;
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: 0.05em;
 		text-decoration: none;
 		transition: color 0.1s linear;
 	}
 
 	.nav-link:hover {
 		color: var(--primary-basic);
+	}
+
+	@media (max-width: 768px) {
+		
 	}
 
 	/* .nav-icon {
