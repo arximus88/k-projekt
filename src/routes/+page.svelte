@@ -1,5 +1,5 @@
 <script>
-	import Icon from '$lib/components/Icons-new.svelte';
+	import Icon from '$lib/components/Icons.svelte';
 	let count = 0.1 + 0.2;
 
 	function incrementCount() {

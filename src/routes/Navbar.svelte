@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import Icon from '$lib/components/Icons-new.svelte';
+	import Icon from '$lib/components/Icons.svelte';
 </script>
 
 	<nav>
