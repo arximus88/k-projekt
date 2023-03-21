@@ -28,6 +28,8 @@
 		border-radius: 12px;
 		background: var(--slight-basic);
 		backdrop-filter: blur(6px);
+		width: fit-content;
+		align-self: center;
 	}
 
 	ul {
