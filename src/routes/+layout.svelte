@@ -1,12 +1,13 @@
 <script>
 	import Header from './Header.svelte';
 	import Navbar from './Navbar.svelte';
+	import VideoBackground from '$lib/components/Video-background.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
 	<Header />
-
+	<VideoBackground />
 	<main>
 		<slot />
 	</main>
@@ -36,7 +37,7 @@
 	}
 
 	footer {
-		display: flex;
+		display: none;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;

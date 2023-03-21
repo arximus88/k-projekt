@@ -23,6 +23,8 @@
 <style>
 
 	nav {
+		position: fixed;
+		bottom: 24px;
 		display: flex;
 		justify-content: center;
 		border-radius: 12px;
