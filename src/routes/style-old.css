@@ -76,7 +76,7 @@ body {
 
 
 
-/* Typography */
+/* Typography Colors */
 
 .text-primary {
     color: var(--primary-basic);
@@ -102,7 +102,7 @@ body {
     color: var(--slight-basic);
 }
 
-/* Desktop */
+/* Typography Desktop */
 /* H1: used for main headings */
 h1 {
     font-size: 48px;
@@ -161,6 +161,7 @@ a {
 }
 
 .caption {
+    margin: 0px;
     font-size: 14px;
     font-weight: normal;
     color: var(--caption-basic);
