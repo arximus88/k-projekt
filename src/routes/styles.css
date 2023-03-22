@@ -269,3 +269,21 @@ button:focus:not(:focus-visible) {
 	width: 1px;
 	white-space: nowrap;
 }
+
+
+/* Animations */
+/* Slow transition */
+.slow-transition {
+	transition: all 0.5s ease-in-out;
+  }
+  
+  /* Average transition */
+  .average-transition {
+	transition: all 0.3s ease-in-out;
+  }
+  
+  /* Fast transition */
+  .fast-transition {
+	transition: all 0.1s ease-in-out;
+  }
+  

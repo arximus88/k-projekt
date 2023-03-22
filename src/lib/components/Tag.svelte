@@ -3,15 +3,16 @@
 	export let tag = '';
 </script>
 
-<div class="tag tag-text">{tag}</div>
+<div class="tag tag-text fast-transition">{tag}</div>
 
 <style>
     .tag-text {
     margin: 0px;
-	font-size: 14px;
-	font-weight: normal;
+	font-size: 12px;
+	font-weight: 500;
     font-family: var(--font-mono);
 	color: var(--caption-basic);
+    text-transform: uppercase;
     }
 
     .tag{

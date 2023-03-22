@@ -1,14 +1,40 @@
 <script>
 import Tag from '$lib/components/Tag.svelte';
+import { onMount } from 'svelte';
 
+let titleHeight;
+let descHeight;
+
+const getTitleHeight = () => {
+  const title = document.querySelector('.project-title');
+  if (title) {
+    titleHeight = title.getBoundingClientRect().height;
+  }
+};
+
+const getDescHeight = () => {
+  const desc = document.querySelector('.project-description');
+  if (desc) {
+    descHeight = desc.getBoundingClientRect().height;
+  }
+};
+
+onMount(() => {
+  getTitleHeight();
+  getDescHeight();
+});
+
+console.log(descHeight)
 </script>
 
 <div class="project">
-    <div class="card"><h4 class="project-title">ZED Run</h4>
-        <p class="project-description">
+    <div class="card average-transition">
+        <h4 class="project-title fast-transition">ZED Run</h4>
+        <div class="project-description average-transition">
             Cool game on Blockchain, race your racehorses against competitors forever
             and win great prizes.
-          </p></div>
+        </div>
+    </div>
     <div class="subline">
       <div class="client">
         <svg
@@ -50,18 +76,32 @@ import Tag from '$lib/components/Tag.svelte';
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    align-self: stretch;
     gap: 8px;
     background: #1e1e1e;
     border-radius: 12px;
-    align-self: stretch;
+    transition: all 0.3s ease-out;
   }
 
 .project-description{
-    display: none;
+    transform: translateY(10px);
+    transition: all 0.3s ease-out;
+    opacity: 0;
 }
+.project-title {
+    transform: translateY(calc(3rem));
+}
+
 .card:hover .project-description {
-    display: block;
+	transform: translateY(0px);
+	opacity: 1;
 }
+
+.card:hover .project-title {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
 .client {
     display: flex;
     gap: 8px;
