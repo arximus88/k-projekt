@@ -1,13 +1,6 @@
 <script>
 	import Icon from '$lib/components/Icons.svelte';
-	let count = 0.1 + 0.2;
-
-	function incrementCount() {
-		count += 1;
-	}
-	$: if (count % 10 === 1 && count > 30) {
-		alert('count is dangerously high!');
-	}
+	import Card from '$lib/components/Card_project.svelte';
 </script>
 
 <svelte:head>
@@ -17,5 +10,16 @@
 
 <h1>Projects</h1>
 <section>
-	<p class="text-secondary">Some projects here</p>
+	<div class="projects">
+		<Card /><Card /><Card />
+	</div>
 </section>
+
+
+<style>
+	.projects {
+		display: grid;
+		gap: 24px;
+    	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+</style>

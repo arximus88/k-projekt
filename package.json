@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@notionhq/client": "^2.2.3",
 		"module-name": "^0.0.1-security"
 	}
 }
