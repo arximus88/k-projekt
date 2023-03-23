@@ -1,7 +1,6 @@
 <script>
 	import Icon from '$lib/components/Icons.svelte';
 	import Card from '$lib/components/Card_project.svelte';
-	import { projects } from '$lib/projectsData.js';
 </script>
 
 <svelte:head>
@@ -12,15 +11,7 @@
 <h1>Projects</h1>
 <section>
 	<div class="projects">
-		{#each projects as project}
-			<Card
-				folder="{project.folder}"
-				title="{project.title}"
-				description="{project.description}"
-				clientName="{project.clientName}"
-				tags="{project.tags}"
-			/>
-		{/each}
+		<Card /><Card /><Card />
 	</div>
 </section>
 
