@@ -1,12 +1,13 @@
 <script>
-	// import logo from '$lib/images/svelte-logo.svg';
+	let logo = './logo-bo.png';
 	// import github from '$lib/images/github.svg';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<!-- <img src={logo} alt="SvelteKit" /> -->
+		<a class="logo-block" href="/">
+			<img class=logo src={logo} alt="SvelteKit" />
+			<h4>Borys's Place</h4>
 		</a>
 	</div>
 
@@ -22,13 +23,22 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
+	.logo-block {
+		display: flex;
+		gap: 8px;
+	}
+.logo{
+	width: 32px;
+	height: 32px;
+}
 	.corner {
-		width: 3em;
-		height: 3em;
+		padding-left: 64px;
+		padding-top: 32px;
 	}
 
 	.corner a {
+		color: var(--secondary-basic);
+		text-decoration: none;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -43,6 +53,6 @@
 	} */
 
 	a:hover {
-		color: var(--color-theme-1);
+		color: var(--primary-basic);
 	}
 </style>

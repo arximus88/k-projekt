@@ -6,6 +6,7 @@
   export let clientName = '';
   export let tags = ['s','s','2'];
   export let folder = '';
+  export let year = 1;
 </script>
 
 <div class="project">
@@ -19,6 +20,7 @@
     <div class="project-description small-text text-secondary slight-transition">
       {description}
     </div>
+    <div class="year caption slight-transition">{year}</div>
   </a>
   </div>
   <div class="subline">
@@ -52,7 +54,6 @@
   position: relative;
   display: flex;
   height: 200px;
-  max-width: 344px;
   padding: 12px;
   flex-direction: column;
   justify-content: flex-end;
@@ -98,6 +99,10 @@
     transform: translateY(10px);
     opacity: 0;
 }
+.year{
+  transform: translateY(10px);
+    opacity: 0;
+}
 .project-title {
     transform: translateY(3rem);
 }
@@ -109,6 +114,10 @@
 
 .card:hover .project-title {
 	transform: translateY(0px);
+}
+
+.card:hover .year {
+	transform: translateY(-10px);
 }
 
 .client {

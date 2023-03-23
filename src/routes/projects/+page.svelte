@@ -19,6 +19,7 @@
 				description="{project.description}"
 				clientName="{project.clientName}"
 				tags="{project.tags}"
+				year="{project.year}"
 			/>
 		{/each}
 	</div>
@@ -27,6 +28,8 @@
 
 <style>
 	.projects {
+		padding-top: 32px;
+		padding-bottom: 128px;
 		display: grid;
 		gap: 24px;
     	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
