@@ -1,5 +1,6 @@
-<script lang="ts">
+<script>
   import Tag from '$lib/components/Tag.svelte';
+  import { dragScroll } from '$lib/dragScroll';
 
   export let title = '';
   export let description = '';
@@ -28,7 +29,7 @@
       <div class="avatar"></div>
       <p class="client-title caption">{clientName}</p>
     </div>
-    <div class="tags">
+    <div class="tags" use:dragScroll>
       {#each tags as tag}
         <Tag tag={tag} />
       {/each}
@@ -123,18 +124,41 @@
 .client {
     display: flex;
     gap: 8px;
-    flex-shrink: 2;
+    flex-shrink: 0;
 }
 .subline {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
 }
 .tags {
+    scrollbar-width: none; 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 8px;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
   }
+  .tags::-webkit-scrollbar {
+  height: 0;
+}
+
+.tags::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20px;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgb(0, 0, 0) 70%
+  );
+  pointer-events: none;
+}
 
 </style>

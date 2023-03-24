@@ -36,8 +36,7 @@ async function getProjects() {
 // Save the projects to a file
 async function saveProjectsToFile() {
   const projects = await getProjects();
-  const reversedProjects = projects.reverse();
-  await writeFile("../src/lib/projects-table.json", JSON.stringify(reversedProjects, null, 2));
+  await writeFile("../src/lib/projects-table.json", JSON.stringify(projects, null, 2));
   console.log("Projects saved to file!");
 }
 

@@ -9,10 +9,6 @@
 	<div class="tags">
 		<Tag tag="iOS" /><Tag tag="Android" /><Tag tag="Mobile" /><Tag tag="iOS" />
 	</div>
-	<h3>Cards</h3>
-	<div class="projects">
-		<Card /><Card /><Card />
-	</div>
 </main>
 
 <style>
@@ -20,9 +16,4 @@
  		display: flex;
  		gap: 8px;
   }
-	.projects {
-		display: grid;
-		gap: 24px;
-    	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	}
 </style>

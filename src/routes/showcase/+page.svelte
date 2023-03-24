@@ -1,6 +1,7 @@
 <script>
 	import Icon from '$lib/components/Icons.svelte';
 	import Showcase from '$lib/components/Showcase.svelte';
+	import TestPage from '$lib/components/TestPage.svelte';
 </script>
 
 <svelte:head>
@@ -10,4 +11,8 @@
 
 <h1>Showcase</h1>
   <Showcase />
+  
+<h1>JSON data</h1>
+  <TestPage />
+
   

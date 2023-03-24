@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "module": "es2020",
+      "lib": ["es2020", "dom"],
+      "target": "es2020",
+      "strict": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "inlineSources": true,
+      "types": ["svelte"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.svelte"],
+    "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  }
+  

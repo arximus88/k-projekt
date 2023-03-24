@@ -1,137 +1,61 @@
 [
   {
-    "id": "d8fbc60f-3eb9-4c28-a1ad-53d78ead3e2c",
-    "title": "The Abbi Agency",
-    "clientName": "The Abbi Agency",
-    "clientUrl": "https://theabbiagency.com/",
-    "projectUrl": "https://theabbiagency.com/",
+    "id": "a6102d9c-612f-417e-b206-c43148964054",
+    "title": "ZED RUN",
+    "clientName": "Virtually Human",
+    "clientUrl": "https://www.vhslab.com/",
+    "projectUrl": "https://zed.run/",
+    "androidUrl": "https://play.google.com/store/apps/details?id=com.virtuallyhuman.zed&hl=en_US&gl=US",
+    "iosUrl": "",
+    "year": 2020,
+    "description": "The first horse racing game of skill to live not only on the blockchain but in an open market. We take cues from the real world of horse racing.",
+    "order": 1,
+    "folder": "zed-run",
+    "tags": [
+      "blockchain",
+      "nft",
+      "eth",
+      "polygon",
+      "horseracing",
+      "web"
+    ]
+  },
+  {
+    "id": "8d065384-6487-4fc3-9e76-cd1c75cda22f",
+    "title": "Human Park",
+    "clientName": "Virtually Human",
+    "clientUrl": "https://www.vhslab.com/",
+    "projectUrl": "https://humanpark.io/",
     "androidUrl": "",
     "iosUrl": "",
-    "year": 2019,
-    "description": "",
-    "order": 9,
-    "folder": "the-abbi-agency",
+    "year": 2022,
+    "description": "Human Park is an outlandish experience bringing a community of thrill-seekers together to overthrow an ominous body that looks to crush expression and seize control.",
+    "order": 2,
+    "folder": "human-park",
     "tags": [
-      "advertisement",
-      "development"
+      "blockchain",
+      "nft",
+      "polygon",
+      "unreal engine",
+      "web",
+      "application",
+      "game"
     ]
   },
   {
-    "id": "a16d7f19-45be-4b7b-a153-bfb60e969800",
-    "title": "Visit Placer",
-    "clientName": "The Abbi Agency",
-    "clientUrl": "https://theabbiagency.com/",
-    "projectUrl": "https://www.visitplacer.com/",
+    "id": "7b20b041-7c50-4be4-b4e5-b583d8af10e8",
+    "title": "Virtually Human Studio",
+    "clientName": "Virtually Human",
+    "clientUrl": "https://www.vhslab.com/",
+    "projectUrl": "https://www.vhslab.com/",
     "androidUrl": "",
     "iosUrl": "",
-    "year": 2019,
-    "description": "",
-    "order": 8,
-    "folder": "visit-placer",
+    "year": 2021,
+    "description": "Virtually Human develops superior consumer-first entertainment experiences with emerging technologies like blockchain to drive widespread user adoption.",
+    "order": 3,
+    "folder": "vhs",
     "tags": [
-      "traveling"
-    ]
-  },
-  {
-    "id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64",
-    "title": "Visit Fellon",
-    "clientName": "The Abbi Agency",
-    "clientUrl": "https://theabbiagency.com/",
-    "projectUrl": "https://visitfallonnevada.com",
-    "androidUrl": "",
-    "iosUrl": "",
-    "year": 2018,
-    "description": "",
-    "order": 10,
-    "folder": "visit-fallon",
-    "tags": [
-      "traveling"
-    ]
-  },
-  {
-    "id": "0bd24041-c884-43e2-98d4-c49f81bc15a2",
-    "title": "Chegg.com",
-    "clientName": "Chegg",
-    "clientUrl": "https://www.chegg.com/",
-    "projectUrl": "",
-    "androidUrl": "",
-    "iosUrl": "",
-    "year": 2015,
-    "description": "",
-    "order": 11,
-    "folder": "chegg",
-    "tags": [
-      "ios",
-      "website"
-    ]
-  },
-  {
-    "id": "2268b839-15ce-499a-bc1f-8c71358598b9",
-    "title": "Upwork Mobile",
-    "clientName": "Upwork",
-    "clientUrl": "https://www.upwork.com/",
-    "projectUrl": "https://www.upwork.com/",
-    "androidUrl": "https://play.google.com/store/apps/details?id=com.upwork.android.apps.client",
-    "iosUrl": "",
-    "year": 2016,
-    "description": "",
-    "order": 7,
-    "folder": "upwork",
-    "tags": [
-      "android",
-      "ios",
-      "website"
-    ]
-  },
-  {
-    "id": "71488d2f-027b-4682-8d6e-e8c7d81eea28",
-    "title": "Inkling",
-    "clientName": "Inkling",
-    "clientUrl": "https://www.inkling.com/",
-    "projectUrl": "",
-    "androidUrl": "https://play.google.com/store/apps/details?id=com.inkling.android.axis&hl=uk&gl=US",
-    "iosUrl": "https://apps.apple.com/ua/app/inkling/id923550071",
-    "year": 2018,
-    "description": "",
-    "order": 12,
-    "folder": "inkling",
-    "tags": [
-      "android",
-      "ios"
-    ]
-  },
-  {
-    "id": "85571e52-e930-47ad-91b8-7d41ae7d7d24",
-    "title": "Edgewood Tahoe",
-    "clientName": "The Abbi Agency",
-    "clientUrl": "https://theabbiagency.com/",
-    "projectUrl": "",
-    "androidUrl": "",
-    "iosUrl": "",
-    "year": 2019,
-    "description": "",
-    "order": 6,
-    "folder": "edgewood-tahoe",
-    "tags": [
-      "website",
-      "traveling"
-    ]
-  },
-  {
-    "id": "c0f231c4-43d2-4b1a-8369-3138449f8dd7",
-    "title": "Medics Nurse App",
-    "clientName": "Medict IT",
-    "clientUrl": "https://medics.ua",
-    "projectUrl": "",
-    "androidUrl": "https://play.google.com/store/apps/details?id=com.medics.nurse",
-    "iosUrl": "",
-    "year": 2019,
-    "description": "",
-    "order": 5,
-    "folder": "nurse-app",
-    "tags": [
-      "android",
-      "healthcare"
+      "web"
     ]
   },
   {
@@ -153,62 +77,138 @@
     ]
   },
   {
-    "id": "7b20b041-7c50-4be4-b4e5-b583d8af10e8",
-    "title": "Virtually Human Studio",
-    "clientName": "Virtually Human",
-    "clientUrl": "https://www.vhslab.com/",
-    "projectUrl": "https://www.vhslab.com/",
-    "androidUrl": "",
+    "id": "c0f231c4-43d2-4b1a-8369-3138449f8dd7",
+    "title": "Medics Nurse App",
+    "clientName": "Medict IT",
+    "clientUrl": "https://medics.ua",
+    "projectUrl": "",
+    "androidUrl": "https://play.google.com/store/apps/details?id=com.medics.nurse",
     "iosUrl": "",
-    "year": 2021,
+    "year": 2019,
     "description": "",
-    "order": 3,
-    "folder": "vhs",
+    "order": 5,
+    "folder": "nurse-app",
     "tags": [
-      "website"
+      "android",
+      "healthcare"
     ]
   },
   {
-    "id": "8d065384-6487-4fc3-9e76-cd1c75cda22f",
-    "title": "Human Park",
-    "clientName": "Virtually Human",
-    "clientUrl": "https://www.vhslab.com/",
-    "projectUrl": "https://humanpark.io/",
+    "id": "85571e52-e930-47ad-91b8-7d41ae7d7d24",
+    "title": "Edgewood Tahoe",
+    "clientName": "The Abbi Agency",
+    "clientUrl": "https://theabbiagency.com/",
+    "projectUrl": "",
     "androidUrl": "",
     "iosUrl": "",
-    "year": 2022,
-    "description": "Human Park is an outlandish experience bringing a community of thrill-seekers together to overthrow an ominous body that looks to crush expression and seize control.",
-    "order": 2,
-    "folder": "human-park",
+    "year": 2019,
+    "description": "",
+    "order": 6,
+    "folder": "edgewood-tahoe",
     "tags": [
-      "blockchain",
-      "nft",
-      "polygon",
-      "unreal engine",
-      "website",
-      "application",
-      "game"
+      "web",
+      "traveling"
     ]
   },
   {
-    "id": "a6102d9c-612f-417e-b206-c43148964054",
-    "title": "ZED RUN",
-    "clientName": "Virtually Human",
-    "clientUrl": "https://www.vhslab.com/",
-    "projectUrl": "https://zed.run/",
-    "androidUrl": "https://play.google.com/store/apps/details?id=com.virtuallyhuman.zed&hl=en_US&gl=US",
-    "iosUrl": "",
-    "year": 2020,
-    "description": "The first horse racing game of skill to live not only on the blockchain but in an open market. We take cues from the real world of horse racing.",
-    "order": 1,
-    "folder": "zed-run",
+    "id": "71488d2f-027b-4682-8d6e-e8c7d81eea28",
+    "title": "Inkling",
+    "clientName": "Inkling",
+    "clientUrl": "https://www.inkling.com/",
+    "projectUrl": "",
+    "androidUrl": "https://play.google.com/store/apps/details?id=com.inkling.android.axis&hl=uk&gl=US",
+    "iosUrl": "https://apps.apple.com/ua/app/inkling/id923550071",
+    "year": 2018,
+    "description": "Inkling is the leading Operational Learning Platform designed to enable your workers to perform their best – anywhere, anytime, on any device.",
+    "order": 12,
+    "folder": "inkling",
     "tags": [
-      "blockchain",
-      "nft",
-      "ethereum",
-      "polygon",
-      "horseracing",
-      "website"
+      "android",
+      "ios"
+    ]
+  },
+  {
+    "id": "2268b839-15ce-499a-bc1f-8c71358598b9",
+    "title": "Upwork Mobile",
+    "clientName": "Upwork",
+    "clientUrl": "https://www.upwork.com/",
+    "projectUrl": "https://www.upwork.com/",
+    "androidUrl": "https://play.google.com/store/apps/details?id=com.upwork.android.apps.client",
+    "iosUrl": "",
+    "year": 2016,
+    "description": "Pioneering a better way of working, helping businesses find more flexibility and connecting talent with more opportunities.",
+    "order": 7,
+    "folder": "upwork",
+    "tags": [
+      "android",
+      "ios",
+      "web"
+    ]
+  },
+  {
+    "id": "0bd24041-c884-43e2-98d4-c49f81bc15a2",
+    "title": "Chegg.com",
+    "clientName": "Chegg",
+    "clientUrl": "https://www.chegg.com/",
+    "projectUrl": "",
+    "androidUrl": "",
+    "iosUrl": "",
+    "year": 2015,
+    "description": "Stay on top of it with homework help, exam prep & writing support—tailored to your courses.",
+    "order": 11,
+    "folder": "chegg",
+    "tags": [
+      "ios",
+      "web"
+    ]
+  },
+  {
+    "id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64",
+    "title": "Visit Fallon",
+    "clientName": "The Abbi Agency",
+    "clientUrl": "https://theabbiagency.com/",
+    "projectUrl": "https://visitfallonnevada.com",
+    "androidUrl": "",
+    "iosUrl": "",
+    "year": 2018,
+    "description": "",
+    "order": 10,
+    "folder": "visit-fallon",
+    "tags": [
+      "traveling"
+    ]
+  },
+  {
+    "id": "a16d7f19-45be-4b7b-a153-bfb60e969800",
+    "title": "Visit Placer",
+    "clientName": "The Abbi Agency",
+    "clientUrl": "https://theabbiagency.com/",
+    "projectUrl": "https://www.visitplacer.com/",
+    "androidUrl": "",
+    "iosUrl": "",
+    "year": 2019,
+    "description": "",
+    "order": 8,
+    "folder": "visit-placer",
+    "tags": [
+      "traveling"
+    ]
+  },
+  {
+    "id": "d8fbc60f-3eb9-4c28-a1ad-53d78ead3e2c",
+    "title": "The Abbi Agency",
+    "clientName": "The Abbi Agency",
+    "clientUrl": "https://theabbiagency.com/",
+    "projectUrl": "https://theabbiagency.com/",
+    "androidUrl": "",
+    "iosUrl": "",
+    "year": 2019,
+    "description": "Creates provocative brand communications that solve problems, build relationships and move all sorts of good things forward.",
+    "order": 9,
+    "folder": "the-abbi-agency",
+    "tags": [
+      "ads",
+      "dev"
     ]
   }
 ]
