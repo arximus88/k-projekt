@@ -17,5 +17,9 @@
 		mask-repeat: no-repeat;
 		mask-position: center;
 		mask-image: var(--icon-url);
+		-webkit-mask-image: var(--icon-url); /* Chrome, Safari */
+		-webkit-mask-size: cover;
+		-webkit-mask-repeat: no-repeat;
+		-webkit-mask-position: center;
 	}
 </style>

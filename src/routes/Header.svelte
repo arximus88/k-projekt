@@ -7,7 +7,7 @@
 	<div class="corner">
 		<a class="logo-block" href="/">
 			<img class=logo src={logo} alt="SvelteKit" />
-			<h4>Borys's Place</h4>
+			<h3>Borys's Place</h3>
 		</a>
 	</div>
 
@@ -41,7 +41,7 @@
 		text-decoration: none;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: start;
 		width: 100%;
 		height: 100%;
 	}
@@ -55,4 +55,12 @@
 	a:hover {
 		color: var(--primary-basic);
 	}
+
+	@media (max-width: 1200px) {
+		.corner {
+			padding-left: 12px;
+			padding-top: 12px;
+	}
+	}
+
 </style>
