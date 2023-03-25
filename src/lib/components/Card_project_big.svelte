@@ -1,7 +1,5 @@
 <script>
 	import Tag from '$lib/components/Tag.svelte';
-	import { dragScroll } from '$lib/dragScroll';
-	import { onMount } from 'svelte';
 
 	export let title = '';
 	export let description = '';
@@ -10,25 +8,6 @@
 	export let folder = '';
 	export let year = 1;
 
-	let tagsContainer;
-	let hasOverflowingTags = false;
-
-	onMount(() => {
-		checkOverflowingTags();
-
-		window.addEventListener('resize', checkOverflowingTags);
-	});
-
-	function checkOverflowingTags() {
-		const containerWidth = tagsContainer.offsetWidth;
-		const tagsWidth = tagsContainer.scrollWidth;
-
-		if (tagsWidth > containerWidth) {
-			hasOverflowingTags = true;
-		} else {
-			hasOverflowingTags = false;
-		}
-	}
 
 </script>
 
@@ -53,11 +32,7 @@
 			<div class="avatar" />
 			<p class="client-title caption">{clientName}</p>
 		</div>
-		<div class="tags"
-			bind:this={tagsContainer}
-			class:has-overflowing-tags={hasOverflowingTags}
-			use:dragScroll
-		  >
+		<div class="tags">
 			{#each tags as tag}
 				<Tag {tag} />
 			{/each}
@@ -83,7 +58,7 @@
 	.card {
 		position: relative;
 		display: flex;
-		height: 200px;
+		height: calc(100vh - 200px);
 		padding: 12px;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -182,7 +157,6 @@
 		gap: 8px;
 	}
 	.tags {
-		scrollbar-width: none;
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
@@ -196,14 +170,5 @@
 	.tags::-webkit-scrollbar {
 		height: 0;
 	}
-	.tags.has-overflowing-tags {
-		mask-size: cover;
-		mask-repeat: no-repeat;
-		mask-position: center;
-		mask-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0) 10%);
-		-webkit-mask-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0) 10%);
-		-webkit-mask-size: cover;
-		-webkit-mask-repeat: no-repeat;
-		-webkit-mask-position: center;
-	}
+
 </style>
