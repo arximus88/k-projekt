@@ -257,19 +257,23 @@ button:focus:not(:focus-visible) {
 
 .button-md a {
     display: inline-block;
-    background-color: var(--primary-accent);
-    color: #fff;
+    color: var(--primary-basic);
     font-weight: bold;
     text-decoration: none;
     text-transform: capitalize;
     padding: 8px 16px;
-    border-radius: 30px;
-    transition: background-color 0.3s;
+    transition: all 0.15s ease-out;
     margin-top: 1rem;
+	background: #3AAFB9;
+	box-shadow: 0px 0px 24px rgba(58, 175, 185, 0.32), inset 0px 0px 0px 1px rgba(247, 249, 249, 0.24);
+	border-radius: 6px; 
+
 }
 
 .button-md a:hover {
-    background-color: #094c8e;
+    background: #3AAFB9;
+	box-shadow: 0px 0px 24px rgba(58, 175, 185, 0.64), inset 0px 0px 0px 3px rgba(247, 249, 249, 0.64);
+	border-radius: 6px;
 }
 
 
