@@ -11,7 +11,7 @@
 <h1>Projects</h1>
 <section>
 	<div class="projects">
-		<Card /><Card /><Card />
+		<Card />
 	</div>
 </section>
 
