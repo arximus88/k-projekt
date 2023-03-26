@@ -46,11 +46,6 @@
 		list-style: none;
 	}
 
-	/* li {
-		position: relative;
-		height: 100%;
-	} */
-
 	/* li[aria-current='page']::before {
 	} */
 
