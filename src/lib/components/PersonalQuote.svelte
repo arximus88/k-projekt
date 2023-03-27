@@ -1,50 +1,49 @@
 <script>
-    import PersonalAvatar from './PersonalAvatar.svelte';
-    export let bg = '#FFAC8A';
-    export let number = 1;
-    export let width = 'fullwide';
-    export let text = 'Enter your quote here';
-  </script>
-  
-  <div class="personal-quote" style="background-color: {bg}; width: {width};">
-    <PersonalAvatar bg={bg} number={number} />
-  
-    <div class="quote-text">
+  import PersonalAvatar from './PersonalAvatar.svelte';
+  export let bg = '#FFAC8A';
+  export let number = 1;
+  export let width = 'fullwide';
+  export let text = 'Enter your quote here';
+  export let textbg = '#D7D7D7';
+</script>
+
+<div class={`personal-quote ${width}`} >
+  <PersonalAvatar bg={bg} number={number} />
+  <div class="quote-text" style="background-color: {textbg};">
       <p>{text}</p>
-    </div>
   </div>
-  
-  <style>
-    .personal-quote {
+</div>
+
+<style>
+  .personal-quote {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      gap: 16px;
+      flex-direction: row;
+      align-items: flex-start;
+  }
+
+  .personal-quote .quote-text {
       border-radius: 8px;
-      padding: 16px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-  
-    .personal-quote .quote-text {
-      background-color: #ffffff;
-      border-radius: 8px;
-      padding: 16px;
+      padding: 24px;
       flex-grow: 1;
-    }
-  
-    :global(.personal-quote .quote-text p) {
+      
+  }
+
+  .personal-quote p {
       margin: 0;
-    }
-  
-    :global(.personal-quote.fullwide) {
+      color: #191b1d;
+      font-weight: 500;
+  }
+
+  .personal-quote.fullwide {
       width: 100%;
-    }
-  
-    :global(.personal-quote.long) {
-      width: 512px;
-    }
-  
-    :global(.personal-quote.small) {
-      width: 320px;
-    }
-  </style>
-  
+  }
+
+  .personal-quote.long {
+      max-width: 512px;
+  }
+
+  .personal-quote.small {
+      max-width: 320px;
+  }
+</style>

@@ -21,9 +21,9 @@
 	<PersonalAvatar number=1 />
 	<PersonalQuote 
 		bg="#FFAC8A" 
-		avatarNumber={3} 
-		width="long" 
-		quote="This is a sample quote." 
+		avatarNumber={1} 
+		width="small" 
+		text="As a player, I can breed, buy, and race your very own racehorses, each with unique attributes and performance capabilities. The game is powered by smart contracts, ensuring fairness and transparency for all players." 
 	/>
 
 </main>

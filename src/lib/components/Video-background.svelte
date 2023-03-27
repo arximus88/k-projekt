@@ -1,7 +1,7 @@
 <div class="bg-container">
-    <video class="bg-video" autoplay muted loop poster="images/bg-img.webp">
-        <source src="media/bg-vid-dark_1.webm" type="video/webm">
-        <source src="media/bg-vid-dark_1.mp4" type="video/mp4">
+    <video class="bg-video" autoplay muted loop poster="/images/bg-img.webp">
+        <source src="/media/bg-vid-dark_1.webm" type="video/webm">
+        <source src="/media/bg-vid-dark_1.mp4" type="video/mp4">
         Your browser does not support the video tag.
 </video>
 </div>

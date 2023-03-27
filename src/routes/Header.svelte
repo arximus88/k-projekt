@@ -1,5 +1,5 @@
 <script>
-	let logo = './logo-bo.png';
+	let logo = '/images/logo-bo.png';
 	// import github from '$lib/images/github.svg';
 </script>
 
