@@ -42,6 +42,7 @@ body {
 	background-attachment: fixed;
 	background-color: var(--body-bg-color);
 	background-size: 100vw 100vh;
+	font-weight: 500;
 }
 
 p {
@@ -126,20 +127,20 @@ a {
 /* Medium text: used for main body text */
 .medium-text {
 	font-size: 16px;
-	font-weight: normal;
+	font-weight: 500;
 	line-height: 1.5;
 }
 
 /* Small text: used for captions, labels, and smaller text */
 .small-text {
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
 }
 
 .caption {
 	margin: 0px;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 500;
 	color: var(--caption-basic);
 }
 
