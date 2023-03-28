@@ -1,10 +1,33 @@
 <script>
+    import { onMount } from 'svelte';
 	import Icon from '$lib/components/Icons.svelte';
     import PersonalQuote from '$lib/components/PersonalQuote.svelte';
     import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
     import { projects } from '$lib/projectsData.js';
     // Fetch the project with id 'zed-run'
     const project = projects.find(p => p.id === 'a6102d9c-612f-417e-b206-c43148964054');
+
+
+    function loadMyPageScripts() {
+        const jqueryScript = document.createElement('script');
+        jqueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+        document.head.appendChild(jqueryScript);
+
+        const fotoramaLink = document.createElement('link');
+        fotoramaLink.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css');
+        fotoramaLink.setAttribute('rel', 'stylesheet');
+        document.head.appendChild(fotoramaLink);
+
+        const fotoramaScript = document.createElement('script');
+        fotoramaScript.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js');
+        document.head.appendChild(fotoramaScript);
+}
+    
+        onMount(() => {
+            loadMyPageScripts();
+        });
+
+
 </script>
 
 <svelte:head>
@@ -20,7 +43,12 @@
         {project.description}
     </p>
     <div class="slider">
-
+<!-- Add images to <div class="fotorama"></div> -->
+    <div class="fotorama">
+        <img src="https://s.fotorama.io/1.jpg" alt="photo1">
+        <img src="https://s.fotorama.io/2.jpg" alt="photo2" >
+    </div>
+  
     </div>
     <p class="project-highlights">
         Key features of ZED RUN include:
@@ -42,11 +70,11 @@
     </p>
     </div>
     <ProjectDetails
-	clientName={project.clientName}
-	year={project.year}
-	platform={project.platform}
-	tags={project.tags}
-	projectUrl={project.projectUrl}
+        clientName={project.clientName}
+        year={project.year}
+        platform={project.platform}
+        tags={project.tags}
+        projectUrl={project.projectUrl}
 	/>
 </div>
 
@@ -61,6 +89,8 @@
     }
     @media (max-width: 768px) {
         .main-content {
+            display: flex;
+            flex-direction: column;
             grid-template-columns: 1fr;
         }
     }
