@@ -103,6 +103,7 @@ onMount(async () => {
         platform={project.platform}
         tags={project.tags}
         projectUrl={project.projectUrl}
+        platforms={project.platforms}
 	/>
 </div>
 

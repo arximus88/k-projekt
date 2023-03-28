@@ -17,6 +17,9 @@
       "eth",
       "polygon",
       "horseracing"
+    ],
+    "platforms": [
+      "web"
     ]
   },
   {
@@ -38,6 +41,11 @@
       "unreal engine",
       "application",
       "game"
+    ],
+    "platforms": [
+      "web",
+      "windows",
+      "macos"
     ]
   },
   {
@@ -55,6 +63,9 @@
     "tags": [
       "Development",
       "blockchain"
+    ],
+    "platforms": [
+      "web"
     ]
   },
   {
@@ -73,6 +84,10 @@
       "android",
       "ios",
       "healthcare"
+    ],
+    "platforms": [
+      "android",
+      "ios"
     ]
   },
   {
@@ -90,6 +105,9 @@
     "tags": [
       "android",
       "healthcare"
+    ],
+    "platforms": [
+      "android"
     ]
   },
   {
@@ -107,6 +125,9 @@
     "tags": [
       "traveling",
       "hotel"
+    ],
+    "platforms": [
+      "web"
     ]
   },
   {
@@ -122,6 +143,10 @@
     "order": 12,
     "folder": "inkling",
     "tags": [
+      "android",
+      "ios"
+    ],
+    "platforms": [
       "android",
       "ios"
     ]
@@ -142,6 +167,11 @@
       "android",
       "ios",
       "web"
+    ],
+    "platforms": [
+      "web",
+      "android",
+      "ios"
     ]
   },
   {
@@ -159,6 +189,11 @@
     "tags": [
       "admissions",
       "study"
+    ],
+    "platforms": [
+      "web",
+      "android",
+      "ios"
     ]
   },
   {
@@ -176,6 +211,9 @@
     "tags": [
       "traveling",
       "city"
+    ],
+    "platforms": [
+      "web"
     ]
   },
   {
@@ -193,6 +231,9 @@
     "tags": [
       "traveling",
       "city"
+    ],
+    "platforms": [
+      "web"
     ]
   },
   {
@@ -211,6 +252,9 @@
       "Advertisement",
       "Webdesign",
       "Development"
+    ],
+    "platforms": [
+      "web"
     ]
   }
 ]

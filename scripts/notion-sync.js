@@ -28,6 +28,7 @@ async function getProjects() {
       order: page.properties.order.number || "",
       folder: page.properties.folder.rich_text[0]?.text.content || "",
       tags: page.properties.tags.multi_select.map(tag => tag.name) || [],
+      platforms: page.properties.platforms.multi_select.map(platform => platform.name) || [],
     };
   });
   return projects;

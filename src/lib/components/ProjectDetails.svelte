@@ -1,12 +1,13 @@
 <script>
 	import Tag from '$lib/components/Tag.svelte';
+	import ProjectPlatform from './ProjectPlatform.svelte';
 	import { dragScroll } from '$lib/dragScroll';
 	import { onMount } from 'svelte';
 	import Button from './Button.svelte';
 
 	export let clientName = '';
 	export let year = 1;
-	export let platform = '';
+	export let platforms = ['s', 's', '2'];
 	export let tags = ['s', 's', '2'];
 	export let projectUrl = '';
 
@@ -46,7 +47,7 @@
 		</div>
 		<div class="detailsLine">
 			<span class="text-caption">Platform</span>
-			<span>{platform}</span>
+			<ProjectPlatform {platforms} />
 		</div>
 	</div>
 	<div
