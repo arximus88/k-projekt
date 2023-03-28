@@ -20,13 +20,15 @@
 	});
 
 	function checkOverflowingTags() {
-		const containerWidth = tagsContainer.offsetWidth;
-		const tagsWidth = tagsContainer.scrollWidth;
+		if (tagsContainer) {
+			const containerWidth = tagsContainer.offsetWidth;
+			const tagsWidth = tagsContainer.scrollWidth;
 
-		if (tagsWidth > containerWidth) {
-			hasOverflowingTags = true;
-		} else {
-			hasOverflowingTags = false;
+			if (tagsWidth > containerWidth) {
+				hasOverflowingTags = true;
+			} else {
+				hasOverflowingTags = false;
+			}
 		}
 	}
 

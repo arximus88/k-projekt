@@ -5,27 +5,46 @@
     import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
     import { projects } from '$lib/projectsData.js';
     // Fetch the project with id 'zed-run'
-    const project = projects.find(p => p.id === 'a6102d9c-612f-417e-b206-c43148964054');
+    const project = projects.find(p => p.folder === 'zed-run');
 
 
-    function loadMyPageScripts() {
-        const jqueryScript = document.createElement('script');
-        jqueryScript.setAttribute('src', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
-        document.head.appendChild(jqueryScript);
-
-        const fotoramaLink = document.createElement('link');
-        fotoramaLink.setAttribute('href', 'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css');
-        fotoramaLink.setAttribute('rel', 'stylesheet');
-        document.head.appendChild(fotoramaLink);
-
-        const fotoramaScript = document.createElement('script');
-        fotoramaScript.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js');
-        document.head.appendChild(fotoramaScript);
+    async function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = () => resolve(script);
+        script.onerror = (error) => reject(error);
+        document.head.appendChild(script);
+    });
 }
-    
-        onMount(() => {
-            loadMyPageScripts();
-        });
+
+async function loadStylesheet(href) {
+    return new Promise((resolve, reject) => {
+        const link = document.createElement('link');
+        link.href = href;
+        link.rel = 'stylesheet';
+        link.onload = () => resolve(link);
+        link.onerror = (error) => reject(error);
+        document.head.appendChild(link);
+    });
+}
+
+async function loadMyPageScripts() {
+    try {
+        await loadScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+        await loadStylesheet('/src/lib/fotorama.css');
+        await loadScript('/src/lib/fotorama.js');
+        // All scripts and styles are loaded; you can now execute code that depends on them.
+    } catch (error) { console.error('Error loading script or stylesheet:', error);
+    }
+}
+
+onMount(async () => {
+    await loadMyPageScripts();
+    // You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
+});
+
+       
 
 
 </script>
@@ -43,8 +62,13 @@
         {project.description}
     </p>
     <div class="slider">
-<!-- Add images to <div class="fotorama"></div> -->
-    <div class="fotorama">
+    <!-- Add images to <div class="fotorama"></div> -->
+    <div class="fotorama"
+        data-width="100%"
+        data-ratio="1000/664"
+        data-navposition="bottom"
+        data-nav="thumbs"
+    >
         <img src="https://s.fotorama.io/1.jpg" alt="photo1">
         <img src="https://s.fotorama.io/2.jpg" alt="photo2" >
     </div>
@@ -95,7 +119,6 @@
         }
     }
     .slider {
-        height: 400px;
-        background-color: #FFAC8A;
+        background-color: transparent;
     }
 </style>
