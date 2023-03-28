@@ -4,9 +4,13 @@
     import PersonalQuote from '$lib/components/PersonalQuote.svelte';
     import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
     import { projects } from '$lib/projectsData.js';
-    // Fetch the project with id 'zed-run'
-    const project = projects.find(p => p.folder === 'zed-run');
 
+    import { page } from '$app/stores';  
+    let parts = $page.url.pathname.split('/');
+    let projectFolder = parts[parts.length - 1].toString();
+    let project = projects.find(p => p.folder === String(projectFolder));
+
+    // let project = projects.find(p => p.folder === 'zed-run');
 
     async function loadScript(src) {
     return new Promise((resolve, reject) => {

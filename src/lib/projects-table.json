@@ -16,8 +16,7 @@
       "nft",
       "eth",
       "polygon",
-      "horseracing",
-      "web"
+      "horseracing"
     ]
   },
   {
@@ -37,7 +36,6 @@
       "nft",
       "polygon",
       "unreal engine",
-      "web",
       "application",
       "game"
     ]
@@ -50,12 +48,13 @@
     "projectUrl": "https://www.vhslab.com/",
     "androidUrl": "",
     "iosUrl": "",
-    "year": 2021,
+    "year": 2022,
     "description": "Virtually Human develops superior consumer-first entertainment experiences with emerging technologies like blockchain to drive widespread user adoption.",
     "order": 3,
     "folder": "vhs",
     "tags": [
-      "web"
+      "Development",
+      "blockchain"
     ]
   },
   {
@@ -106,8 +105,8 @@
     "order": 6,
     "folder": "edgewood-tahoe",
     "tags": [
-      "web",
-      "traveling"
+      "traveling",
+      "hotel"
     ]
   },
   {
@@ -158,8 +157,8 @@
     "order": 11,
     "folder": "chegg",
     "tags": [
-      "ios",
-      "web"
+      "admissions",
+      "study"
     ]
   },
   {
@@ -175,7 +174,8 @@
     "order": 10,
     "folder": "visit-fallon",
     "tags": [
-      "traveling"
+      "traveling",
+      "city"
     ]
   },
   {
@@ -191,7 +191,8 @@
     "order": 8,
     "folder": "visit-placer",
     "tags": [
-      "traveling"
+      "traveling",
+      "city"
     ]
   },
   {
@@ -207,8 +208,9 @@
     "order": 9,
     "folder": "the-abbi-agency",
     "tags": [
-      "ads",
-      "dev"
+      "Advertisement",
+      "Webdesign",
+      "Development"
     ]
   }
 ]
