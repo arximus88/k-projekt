@@ -1,8 +1,9 @@
 import { Client } from "@notionhq/client";
 import { writeFile } from "fs/promises";
 
-// Initialize a new Notion client
-const notion = new Client({ auth: 'secret_29roOcjKyT3wmqutEmSmMzcWR4D7x4eQQoL51ijPCpb' });
+const notion = new Client({
+  auth: process.env.NOTION_API_SECRET,
+});
 
 // Fetch the database data
 async function getDatabase(databaseId) {
