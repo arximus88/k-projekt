@@ -17,6 +17,9 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			$lib: '/src/lib',
+			photoswipe: 'photoswipe/dist/photoswipe-lightbox.esm.js',
 		},
 	},
 });
+
+  

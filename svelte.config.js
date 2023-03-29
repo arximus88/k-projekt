@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 import alias from '@rollup/plugin-alias';
 import preprocess from 'svelte-preprocess';
 

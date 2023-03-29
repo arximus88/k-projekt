@@ -1,0 +1,13 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: k-projekt
+    src: .
+    engine: svelte-kit
+    primary: true
+    presets:
+      env:
+        - name: NOTION_SECRET
+          description: NOTION_SECRET
+    public_routes:
+      - "/*" # wildcards
