@@ -1,11 +1,12 @@
 <script>
 	import Tag from '$lib/components/Tag.svelte';
-	import ProjectPlatform from './ProjectPlatform.svelte';
+	import Icons from './Icons.svelte';
 	import { dragScroll } from '$lib/dragScroll';
 	import { onMount } from 'svelte';
 	import Button from './Button.svelte';
 
 	export let clientName = '';
+	export let clientUrl = '';
 	export let year = 1;
 	export let platforms = ['s', 's', '2'];
 	export let tags = ['s', 's', '2'];
@@ -32,6 +33,7 @@
 			}
 		}
 	}
+	console.log(clientUrl);
 </script>
 
 <aside class="details">
@@ -39,7 +41,7 @@
 	<div>
 		<div class="detailsLine">
 			<span class="text-caption">Client</span>
-			<span>{clientName}</span>
+			<a href="{clientUrl}" target="_blank" rel="noopener noreferrer">{clientName}</a>
 		</div>
 		<div class="detailsLine">
 			<span class="text-caption">Year</span>
@@ -47,7 +49,11 @@
 		</div>
 		<div class="detailsLine">
 			<span class="text-caption">Platform</span>
-			<ProjectPlatform {platforms} />
+			<div class="platforms">
+				{#each platforms as platform}
+			<Icons name={platform} size='16' />
+	 		{/each}
+		</div>
 		</div>
 	</div>
 	<div
@@ -64,6 +70,10 @@
 </aside>
 
 <style>
+	.platforms {
+		display: flex;
+		gap: 8px;
+	}
 	.details {
 		display: flex;
 		flex-direction: column;

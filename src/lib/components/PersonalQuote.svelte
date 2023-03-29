@@ -1,7 +1,7 @@
 <script>
   import PersonalAvatar from './PersonalAvatar.svelte';
   export let bg = '#FFAC8A';
-  export let number = 1;
+  export let number;
   export let width = 'fullwide';
   export let text = 'Enter your quote here';
   export let textbg = '#D7D7D7';

@@ -94,31 +94,39 @@ onMount(async () => {
     </p>
     </div>
     <ProjectDetails
-        clientName={project.clientName}
-        year={project.year}
-        platform={project.platform}
-        tags={project.tags}
-        projectUrl={project.projectUrl}
+		clientName={project.clientName}
+		clientUrl={project.clientUrl}
+		year={project.year}
+		platform={project.platform}
+		tags={project.tags}
+		projectUrl={project.projectUrl}
+		platforms={project.platforms}
 	/>
 </div>
 
-
 <style>
-    .main-content {
-        display: grid;
-        grid-template-columns: 3fr 320px;
-        grid-gap: 2rem;
-        margin: 2rem 0;
-        padding-bottom: 128px;
-    }
-    @media (max-width: 768px) {
-        .main-content {
-            display: flex;
-            flex-direction: column;
-            grid-template-columns: 1fr;
-        }
-    }
-    .slider {
-        background-color: transparent;
-    }
+	.main-content {
+		display: grid;
+		grid-template-columns: 1fr 320px;
+		grid-gap: 2rem;
+		margin: 2rem 0;
+		padding-bottom: 128px;
+	}
+	.slider {
+		background-color: transparent;
+		max-width: 640px;
+	}
+
+	@media (max-width: 1024px) {
+		.main-content {
+			display: flex;
+			flex-direction: column;
+			grid-template-columns: 1fr;
+			min-width: 288px;
+		}
+		.slider {
+			max-width: 100%;
+			min-width: 288px;
+		}
+	}
 </style>

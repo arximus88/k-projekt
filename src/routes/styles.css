@@ -151,6 +151,11 @@ a {
 	color: var(--caption-basic);
 }
 
+.project-description {
+	padding-bottom: 24px;
+
+}
+
 /* Mobile */
 @media (max-width: 576px) {
 	/* H1: used for main headings */
