@@ -55,7 +55,7 @@ onMount(async () => {
 
 <svelte:head>
 	<title>{project.title} - Project</title>
-	<meta name="description" content="ZED RUN - Projects page" />
+	<meta name="description" content="Visit Placer - Projects page" />
 </svelte:head>
 
 <!-- Main content -->
@@ -93,12 +93,14 @@ onMount(async () => {
         Text
     </p>
     </div>
-    <ProjectDetails
-        clientName={project.clientName}
-        year={project.year}
-        platform={project.platform}
-        tags={project.tags}
-        projectUrl={project.projectUrl}
+	<ProjectDetails
+		clientName={project.clientName}
+		clientUrl={project.clientUrl}
+		year={project.year}
+		platform={project.platform}
+		tags={project.tags}
+		projectUrl={project.projectUrl}
+		platforms={project.platforms}
 	/>
 </div>
 
