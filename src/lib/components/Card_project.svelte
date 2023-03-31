@@ -9,6 +9,7 @@
 	export let tags = ['s', 's', '2'];
 	export let folder = '';
 	export let year = 1;
+	export let disabled = false;
 
 	let tagsContainer;
 	let hasOverflowingTags = false;
@@ -31,35 +32,39 @@
 			}
 		}
 	}
-
 </script>
 
 <div class="project">
 	<div class="card slight-transition">
-		<a href={`/projects/${folder}`}>
+		<a href={disabled ? '#' : `/projects/${folder}`} class:disabled>
 			<picture class="card-image">
 				<source class="contain" srcset={`/images/projects-bg/${folder}.webp`} type="image/webp" />
 				<img class="contain" src={`/images/projects-bg/${folder}.jpg`} alt={title} />
 			</picture>
-      <div class="h4 pseudo-title text-primary fast-transition">{title}</div>
+			<div class="h4 pseudo-title text-primary fast-transition">{title}</div>
 			<h4 class="project-title text-primary fast-transition">{title}</h4>
 			<div class="project-description small-text text-secondary fast-transition">
 				{description}
 			</div>
-			<div class="year caption fast-transition">{year}</div>
-		
-    </a>
+			<div class="lastline">
+				<div class="year caption fast-transition">{year}</div>
+				<div class="small-text text-tertiary butt">
+					{disabled ? `TBD` : `View Case`}
+				</div>
+			</div>
+		</a>
 	</div>
 	<div class="subline">
 		<div class="client">
 			<div class="avatar" />
 			<p class="client-title caption">{clientName}</p>
 		</div>
-		<div class="tags"
+		<div
+			class="tags"
 			bind:this={tagsContainer}
 			class:has-overflowing-tags={hasOverflowingTags}
 			use:dragScroll
-		  >
+		>
 			{#each tags as tag}
 				<Tag {tag} />
 			{/each}
@@ -68,8 +73,8 @@
 </div>
 
 <style>
-  .avatar {
-    display: none;
+	.avatar {
+		display: none;
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
@@ -86,7 +91,7 @@
 		position: relative;
 		display: flex;
 		height: 200px;
-		padding: 12px;
+		padding: 0px 12px;
 		flex-direction: column;
 		justify-content: flex-end;
 		align-items: flex-start;
@@ -100,12 +105,16 @@
 	.card:hover {
 		box-shadow: 0px 0px 1px var(--card-bg), 0px 0px 12px var(--tertiary-basic);
 	}
+
+	.disabled {
+		pointer-events: none;
+	}
+
 	.card a:link {
 		text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
 	}
 	.card-image {
 		position: absolute;
@@ -123,19 +132,21 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background: linear-gradient(180deg, rgba(57, 60, 63, 0.16) 0%, rgba(57, 60, 63, 0.64) 100%);
+		background: linear-gradient(180deg, rgba(57, 60, 63, 0.0) 0%, rgba(57, 60, 63, 0.64) 100%);
 	}
-  .card:hover .card-image::after {
-    background: linear-gradient(180deg, rgba(57, 60, 63, 0.32) 0%, rgba(33, 33, 33, 0.8) 100%);
-  }
-
+	.card:hover .card-image::after {
+		background: linear-gradient(180deg, rgba(57, 60, 63, 0.32) 0%, rgba(33, 33, 33, 0.8) 100%);
+	}
 
 	.card-image img {
 		width: 100%;
 		height: 100%; /* Add this line to set the height to 100% */
 		object-fit: cover;
 	}
-  
+
+	.disabled img {
+		filter: grayscale(100%);
+	}
 	.pseudo-title {
 		transform: translateY(0rem);
 		position: absolute;
@@ -164,14 +175,18 @@
 		opacity: 1;
 	}
 
-	.year {
+	.lastline {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
 		transform: translateY(1rem);
 		opacity: 0;
 	}
-	.card:hover .year {
+	.card:hover .lastline {
 		transform: translateY(0rem);
-	opacity: 1;
+		opacity: 1;
 	}
+
 	.client {
 		display: flex;
 		gap: 8px;

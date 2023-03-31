@@ -20,6 +20,7 @@
 				clientName="{project.clientName}"
 				tags="{project.tags}"
 				year="{project.year}"
+				disabled="{project.disabled}"
 			/>
 		{/each}
 	</div>

@@ -59,7 +59,7 @@
 		<p class="project-description caption">
 			{project.description}
 		</p>
-		<div class="slider">
+		<div class="project-slider">
 			<!-- Add images to <div class="fotorama"></div> -->
 			<div
 				class="fotorama"
@@ -90,16 +90,16 @@
 			<li>Open market for trading racehorses and assets</li>
 		</ul>
 		<p>
-            Work on ZED RUN started in November 2019. As a Framer.js prototyper I built an interactive horse
-			racing prototype prior to the initial launch. After this, I began working on the website UI to
-			prepare it for launch. Alongside the two founders, there were only backend and frontend
+			Work on ZED RUN started in November 2019. As a Framer.js prototyper I built an interactive
+			horse racing prototype prior to the initial launch. After this, I began working on the website
+			UI to prepare it for launch. Alongside the two founders, there were only backend and frontend
 			engineers. We released the first iteration of zed.run and began selling the first batch of Z1
 			Nakamotos digital racehorses.
 		</p>
 		<PersonalQuote
 			bg="#FFAC8A"
 			width="long"
-            avatar="1"
+			avatar="1"
 			text="I was thrilled to be a part of ZED RUN from the beginning and see how it grew over time. The experience was invaluable and taught me a lot about designing for emerging markets."
 		/>
 		<p>
@@ -166,20 +166,12 @@
 		margin: 2rem 0;
 		padding-bottom: 128px;
 	}
-	.slider {
-		background-color: transparent;
-		max-width: 640px;
-	}
 
 	@media (max-width: 1024px) {
 		.main-content {
 			display: flex;
 			flex-direction: column;
 			grid-template-columns: 1fr;
-			min-width: 288px;
-		}
-		.slider {
-			max-width: 100%;
 			min-width: 288px;
 		}
 	}

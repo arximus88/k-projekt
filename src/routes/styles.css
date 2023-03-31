@@ -144,6 +144,11 @@ a {
 	color: var(--caption-basic);
 }
 
+.butt {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 /* Footnote: used for fine print or footnotes */
 .footnote {
 	font-size: 11px;
@@ -154,6 +159,19 @@ a {
 .project-description {
 	padding-bottom: 24px;
 
+}
+.project-slider {
+	background-color: transparent;
+	max-width: 640px;}
+
+@media (max-width: 1024px) {
+	.project-slider {
+		min-width: 320px;
+		max-width: calc(100% - -32px);
+		background: var(--slight-basic);
+		margin: 0px;
+		margin: 0px -16px;
+	}
 }
 
 /* Mobile */
