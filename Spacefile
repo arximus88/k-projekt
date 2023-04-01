@@ -1,10 +1,11 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
-v: 0
+v: 0.4
 micros:
   - name: k-projekt
     src: .
     engine: svelte-kit
     primary: true
+    public: true
     presets:
       env:
         - name: NOTION_SECRET

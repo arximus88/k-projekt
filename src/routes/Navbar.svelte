@@ -9,10 +9,10 @@
 				<a class="nav-link" href="/"> <Icon name="user-edit" size={20} />Home</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
-				<a class="nav-link" href="/projects"><Icon name="stars" size={20} />Projects</a>
+				<a class="nav-link" href="/projects"><Icon name="presentation" size={20} />Projects</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/cats' ? 'page' : undefined}>
-				<a class="nav-link" href="/cats"><Icon name="presentation" size={20} />Cats</a>
+				<a class="nav-link" href="/cats"><Icon name="stars" size={20} />Cats</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/misc' ? 'page' : undefined}>
 				<a class="nav-link" href="/misc"><Icon name="code-snippet" size={20} />Misc</a>
