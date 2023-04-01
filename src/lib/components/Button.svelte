@@ -2,7 +2,7 @@
 	import Icons from './Icons.svelte';
 
 	export let size = 'default';
-	export let width = 'fitcontent';
+	export let width = 'fit';
 	export let variant = 'primary';
 	export let disabled = false;
 	export let icon = '';
@@ -51,6 +51,7 @@
 		outline: none;
 	}
 
+	/* Size Options */
 	.small {
 		font-size: 14px;
 		padding: 9px 16px;
@@ -66,14 +67,24 @@
 		padding: 21px 28px;
 	}
 
-	.fitcontent {
+	/* Width Options */
+	.fit {
 		width: fit-content;
 	}
 
 	.block {
 		width: 100%;
 	}
+	.adaptive {
+		width: fit-content;
+	}
+	@media (max-width: 576px) {
+		.adaptive {
+			width: 100%;
+		}
+	}
 
+	/* Variant Options */
 	.primary {
 		background: #3aafb9;
 		box-shadow: 0px 0px 24px rgba(58, 175, 185, 0.32),

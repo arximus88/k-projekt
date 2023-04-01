@@ -5,11 +5,14 @@
 </script>
 
 <svelte:head>
-	<title>Projects</title>
+	<title>Borys's Projects</title>
 	<meta name="description" content="Projects" />
 </svelte:head>
 
 <h1>Projects</h1>
+<p class="project-description caption">
+	Project cases are still under construction. I'm working on it.
+</p>
 <section class="page-container">
 	<div class="projects">
 		{#each projects as project}

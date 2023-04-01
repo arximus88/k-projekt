@@ -17,17 +17,17 @@
     }
 
     .bg-video {
-        height: 100vh;
+        height: 64vh;
     }
 
     .bg-container::before {
         content: "";
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 64vh;
 
         z-index: 1;
-        background:  radial-gradient(99.99% 100% at 100% 0%, var(--body-bg-shade) 0%, var(--body-bg-color));
+        background:  radial-gradient(50% 100% at 50% 0%, rgba(25, 27, 29, 0.32) 0%, #191B1D 100%);
     }
 
     :global([data-theme="light"]) .bg-video {filter: invert(100%) hue-rotate(140deg);}
