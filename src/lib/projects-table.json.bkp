@@ -114,8 +114,8 @@
     "platforms": [
       "android"
     ],
-    "visible": false,
-    "disabled": false
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "85571e52-e930-47ad-91b8-7d41ae7d7d24",
@@ -159,8 +159,8 @@
       "android",
       "ios"
     ],
-    "visible": false,
-    "disabled": false
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "2268b839-15ce-499a-bc1f-8c71358598b9",
@@ -229,8 +229,8 @@
     "platforms": [
       "web"
     ],
-    "visible": false,
-    "disabled": false
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "a16d7f19-45be-4b7b-a153-bfb60e969800",
@@ -251,8 +251,8 @@
     "platforms": [
       "web"
     ],
-    "visible": false,
-    "disabled": false
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "d8fbc60f-3eb9-4c28-a1ad-53d78ead3e2c",
