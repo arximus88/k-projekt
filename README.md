@@ -1,13 +1,14 @@
 # My K-Project: Personal Website
 Welcome to my K-Project, a personal website built with create-svelte. I've designed and developed this project to showcase my work and share my thoughts with the world.
 
-## Svelte Kit
+## I used Svelte Kit
 If you want to create a similar project or explore my code, you can start by setting up a new Svelte project:
-### create a new project in the current directory
+- reate a new project in the current directory
 `npm create svelte@latest`
 
-### or create a new project in a folder called my-app
+- or create a new project in a folder called my-app
 `npm create svelte@latest my-app`
+
 
 ## Local Development
 To start working on the project, first, clone the repository and install the dependencies with npm install (or pnpm install or yarn). Then, start a development server:
