@@ -3,43 +3,12 @@
 	import PersonalQuote from '$lib/components/PersonalQuote.svelte';
 	import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
 	import { projects } from '$lib/projectsData.js';
-
 	import { page } from '$app/stores';
+	import { loadMyPageScripts } from '$lib/scripts/loadFotorama.js';
+
 	let parts = $page.url.pathname.split('/');
 	let projectFolder = parts[parts.length - 1].toString();
 	let project = projects.find((p) => p.folder === String(projectFolder));
-
-	async function loadScript(src) {
-		return new Promise((resolve, reject) => {
-			const script = document.createElement('script');
-			script.src = src;
-			script.onload = () => resolve(script);
-			script.onerror = (error) => reject(error);
-			document.head.appendChild(script);
-		});
-	}
-
-	async function loadStylesheet(href) {
-		return new Promise((resolve, reject) => {
-			const link = document.createElement('link');
-			link.href = href;
-			link.rel = 'stylesheet';
-			link.onload = () => resolve(link);
-			link.onerror = (error) => reject(error);
-			document.head.appendChild(link);
-		});
-	}
-
-	async function loadMyPageScripts() {
-		try {
-			await loadScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
-			await loadStylesheet('/src/lib/fotorama.css');
-			await loadScript('/src/lib/fotorama.js');
-			// All scripts and styles are loaded; you can now execute code that depends on them.
-		} catch (error) {
-			console.error('Error loading script or stylesheet:', error);
-		}
-	}
 
 	onMount(async () => {
 		await loadMyPageScripts();
@@ -53,7 +22,7 @@
 </svelte:head>
 
 <!-- Main content -->
-<div class="main-content">
+<div class="project-content">
 	<div>
 		<h1 class="project-title">{project.title}</h1>
 		<p class="project-description caption">
@@ -142,27 +111,49 @@
 		<h3 class="project-highlights">Key features of {project.title} include:</h3>
 		<ul class="project-features">
 			<li>
-			  <h4>Breed and train digital horses</h4>
-			  <p class="text-secondary small-text">ZED RUN allows players to breed and train digital horses on the blockchain. Each horse has unique attributes that affect their performance on the racetrack. Players can breed horses to create new offspring with desirable traits, and train their horses to improve their racing abilities.</p>
+				<h4>Breed and train digital horses</h4>
+				<p class="text-secondary small-text">
+					ZED RUN allows players to breed and train digital horses on the blockchain. Each horse has
+					unique attributes that affect their performance on the racetrack. Players can breed horses
+					to create new offspring with desirable traits, and train their horses to improve their
+					racing abilities.
+				</p>
 			</li>
 			<li>
-			  <h4>Compete in virtual horse races</h4>
-			  <p class="text-secondary small-text">ZED RUN hosts virtual horse races that take place in real-time on the blockchain. Players can enter their horses in races and compete against other players from around the world. Each race is an immersive experience that allows players to watch their horses compete and win prizes.</p>
+				<h4>Compete in virtual horse races</h4>
+				<p class="text-secondary small-text">
+					ZED RUN hosts virtual horse races that take place in real-time on the blockchain. Players
+					can enter their horses in races and compete against other players from around the world.
+					Each race is an immersive experience that allows players to watch their horses compete and
+					win prizes.
+				</p>
 			</li>
 			<li>
-			  <h4>Collect and trade digital horses</h4>
-			  <p class="text-secondary small-text">ZED RUN horses are collectible digital assets that can be bought, sold, and traded on the blockchain. Each horse has a unique ID that is stored on the blockchain, making it a rare and valuable collectible. Players can trade horses with other players and build a collection of rare and valuable digital assets.</p>
+				<h4>Collect and trade digital horses</h4>
+				<p class="text-secondary small-text">
+					ZED RUN horses are collectible digital assets that can be bought, sold, and traded on the
+					blockchain. Each horse has a unique ID that is stored on the blockchain, making it a rare
+					and valuable collectible. Players can trade horses with other players and build a
+					collection of rare and valuable digital assets.
+				</p>
 			</li>
 			<li>
-			  <h4>Accessible to all</h4>
-			  <p class="text-secondary small-text">ZED RUN is designed to be accessible to everyone, from experienced horse racing enthusiasts to casual gamers. The game is easy to play and offers a low barrier to entry, making it a fun and engaging experience for all players.</p>
+				<h4>Accessible to all</h4>
+				<p class="text-secondary small-text">
+					ZED RUN is designed to be accessible to everyone, from experienced horse racing
+					enthusiasts to casual gamers. The game is easy to play and offers a low barrier to entry,
+					making it a fun and engaging experience for all players.
+				</p>
 			</li>
 			<li>
-			  <h4>Decentralized and secure</h4>
-			  <p class="text-secondary small-text">ZED RUN is built on the Ethereum blockchain, making it a decentralized and secure platform for digital horse racing. The use of blockchain technology ensures that all transactions are transparent and immutable, and that ownership of horses is secure and verifiable.</p>
+				<h4>Decentralized and secure</h4>
+				<p class="text-secondary small-text">
+					ZED RUN is built on the Ethereum blockchain, making it a decentralized and secure platform
+					for digital horse racing. The use of blockchain technology ensures that all transactions
+					are transparent and immutable, and that ownership of horses is secure and verifiable.
+				</p>
 			</li>
-		  </ul>
-		  
+		</ul>
 	</div>
 	<ProjectDetails
 		clientName={project.clientName}
@@ -176,20 +167,4 @@
 </div>
 
 <style>
-	.main-content {
-		display: grid;
-		grid-template-columns: 1fr 320px;
-		grid-gap: 2rem;
-		margin: 2rem 0;
-		padding-bottom: 128px;
-	}
-
-	@media (max-width: 1024px) {
-		.main-content {
-			display: flex;
-			flex-direction: column;
-			grid-template-columns: 1fr;
-			min-width: 288px;
-		}
-	}
 </style>

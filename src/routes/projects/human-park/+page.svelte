@@ -3,43 +3,12 @@
 	import PersonalQuote from '$lib/components/PersonalQuote.svelte';
 	import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
 	import { projects } from '$lib/projectsData.js';
-
 	import { page } from '$app/stores';
+	import { loadMyPageScripts } from '$lib/scripts/loadFotorama.js';
+
 	let parts = $page.url.pathname.split('/');
 	let projectFolder = parts[parts.length - 1].toString();
 	let project = projects.find((p) => p.folder === String(projectFolder));
-
-	async function loadScript(src) {
-		return new Promise((resolve, reject) => {
-			const script = document.createElement('script');
-			script.src = src;
-			script.onload = () => resolve(script);
-			script.onerror = (error) => reject(error);
-			document.head.appendChild(script);
-		});
-	}
-
-	async function loadStylesheet(href) {
-		return new Promise((resolve, reject) => {
-			const link = document.createElement('link');
-			link.href = href;
-			link.rel = 'stylesheet';
-			link.onload = () => resolve(link);
-			link.onerror = (error) => reject(error);
-			document.head.appendChild(link);
-		});
-	}
-
-	async function loadMyPageScripts() {
-		try {
-			await loadScript('https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
-			await loadStylesheet('/src/lib/fotorama.css');
-			await loadScript('/src/lib/fotorama.js');
-			// All scripts and styles are loaded; you can now execute code that depends on them.
-		} catch (error) {
-			console.error('Error loading script or stylesheet:', error);
-		}
-	}
 
 	onMount(async () => {
 		await loadMyPageScripts();
@@ -53,7 +22,7 @@
 </svelte:head>
 
 <!-- Main content -->
-<div class="main-content">
+<div class="project-content">
 	<div>
 		<h1 class="project-title">{project.title}</h1>
 		<p class="project-description caption">
@@ -213,20 +182,4 @@
 </div>
 
 <style>
-	.main-content {
-		display: grid;
-		grid-template-columns: 1fr 320px;
-		grid-gap: 2rem;
-		margin: 2rem 0;
-		padding-bottom: 128px;
-	}
-
-	@media (max-width: 1024px) {
-		.main-content {
-			display: flex;
-			flex-direction: column;
-			grid-template-columns: 1fr;
-			min-width: 288px;
-		}
-	}
 </style>

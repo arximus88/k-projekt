@@ -265,6 +265,24 @@ page-container {
 	padding-top: 32px;
 } 
 
+.project-content {
+	display: grid;
+	grid-template-columns: 1fr 320px;
+	grid-gap: 2rem;
+	margin: 2rem 0;
+}
+
+@media (max-width: 1024px) {
+	.project-content {
+		display: flex;
+		flex-direction: column;
+		grid-template-columns: 1fr;
+		min-width: 288px;
+	}
+}
+
+
+
 pre {
 	font-size: 16px;
 	font-family: var(--font-mono);

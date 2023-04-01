@@ -19,7 +19,7 @@
 			</li>
 		</ul>
 	</nav>
-
+	<div class="bottom-shade"></div>
 <style>
 
 	nav {
@@ -28,14 +28,23 @@
 		display: flex;
 		justify-content: center;
 		border-radius: 12px;
-		background: var(--card-bg);
-		box-shadow: inset 0 0 24px var(--slight-basic);
-		/* backdrop-filter: blur(6px); */
+		background: #121317;
+		box-shadow: inset 0 0 0 2px var(--slight-basic);
 		width: fit-content;
 		align-self: center;
 		z-index: 100;
 	}
-
+	.bottom-shade{
+		content: '';
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 64px;
+		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, var(--card-bg) 100%);
+		z-index: 0;
+	}		
 	ul {
 		position: relative;
 		padding: 12px 24px;
