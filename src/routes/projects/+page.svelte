@@ -21,6 +21,7 @@
 				tags="{project.tags}"
 				year="{project.year}"
 				disabled="{project.disabled}"
+				visible="{project.visible}"
 			/>
 		{/each}
 	</div>

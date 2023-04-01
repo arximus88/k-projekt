@@ -1,14 +1,14 @@
 <script>
   import PersonalAvatar from './PersonalAvatar.svelte';
   export let bg = '#FFAC8A';
-  export let number;
+  export let avatar;
   export let width = 'fullwide';
   export let text = 'Enter your quote here';
   export let textbg = '#D7D7D7';
 </script>
 
 <div class={`personal-quote ${width}`} >
-  <PersonalAvatar bg={bg} number={number} />
+  <PersonalAvatar bg={bg} avatar={avatar} />
   <div class="quote-text" style="background-color: {textbg};">
       <p>{text}</p>
   </div>

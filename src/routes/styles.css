@@ -81,28 +81,32 @@ p {
 
 /* Typography Desktop */
 /* H1: used for main headings */
-h1, .h1 {
+h1,
+.h1 {
 	font-size: 48px;
 	font-weight: bold;
 	margin: 0px;
 }
 
 /* H2: used for subheadings */
-h2, .h2{
+h2,
+.h2 {
 	font-size: 32px;
 	font-weight: bold;
 	margin: 0px;
 }
 
 /* H3: used for section headings */
-h3, .h3 {
+h3,
+.h3 {
 	font-size: 24px;
 	font-weight: bold;
 	margin: 0px;
 }
 
 /* H4: used for sub-section headings */
-h4, .h4 {
+h4,
+.h4 {
 	font-size: 18px;
 	font-weight: bold;
 	margin: 0px;
@@ -158,11 +162,11 @@ a {
 
 .project-description {
 	padding-bottom: 24px;
-
 }
 .project-slider {
 	background-color: transparent;
-	max-width: 640px;}
+	max-width: 640px;
+}
 
 @media (max-width: 1024px) {
 	.project-slider {
@@ -177,28 +181,32 @@ a {
 /* Mobile */
 @media (max-width: 576px) {
 	/* H1: used for main headings */
-	h1, .h1 {
+	h1,
+	.h1 {
 		font-size: 32px;
 		font-weight: bold;
 		margin: 0px;
 	}
 
 	/* H2: used for subheadings */
-	h2, .h2{
+	h2,
+	.h2 {
 		font-size: 24px;
 		font-weight: bold;
 		margin: 0px;
 	}
 
 	/* H3: used for section headings */
-	h3, .h3 {
+	h3,
+	.h3 {
 		font-size: 18px;
 		font-weight: bold;
 		margin: 0px;
 	}
 
 	/* H4: used for sub-section headings */
-	h4, .h4 {
+	h4,
+	.h4 {
 		font-size: 14px;
 		font-weight: bold;
 		margin: 0px;
@@ -278,28 +286,25 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
-
 .button-md a {
-    display: inline-block;
-    color: var(--primary-basic);
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 8px 16px;
-    transition: all 0.15s ease-out;
-    margin-top: 1rem;
-	background: #3AAFB9;
+	display: inline-block;
+	color: var(--primary-basic);
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;
+	padding: 8px 16px;
+	transition: all 0.15s ease-out;
+	margin-top: 1rem;
+	background: #3aafb9;
 	box-shadow: 0px 0px 24px rgba(58, 175, 185, 0.32), inset 0px 0px 0px 1px rgba(247, 249, 249, 0.24);
-	border-radius: 6px; 
-
-}
-
-.button-md a:hover {
-    background: #3AAFB9;
-	box-shadow: 0px 0px 24px rgba(58, 175, 185, 0.64), inset 0px 0px 0px 3px rgba(247, 249, 249, 0.64);
 	border-radius: 6px;
 }
 
+.button-md a:hover {
+	background: #3aafb9;
+	box-shadow: 0px 0px 24px rgba(58, 175, 185, 0.64), inset 0px 0px 0px 3px rgba(247, 249, 249, 0.64);
+	border-radius: 6px;
+}
 
 @media (min-width: 720px) {
 	h1 {
@@ -319,24 +324,26 @@ button:focus:not(:focus-visible) {
 	white-space: nowrap;
 }
 
-
 /* Animations */
 /* Slow transition */
 .slow-transition {
 	transition: all 0.5s ease-out;
-  }
-  .average-transition {
+}
+.average-transition {
 	transition: all 0.3s ease-out;
-  }
-  .slight-transition {
+}
+.slight-transition {
 	transition: all 0.15s ease-out;
-  }
-  .fast-transition {
+}
+.fast-transition {
 	transition: all 0.1s ease-out;
-  }
-  
+}
 
 /* Utilites */
-  .contain {
+.contain {
 	object-fit: contain;
-  }
+}
+
+.display-none {
+	display: none !important;
+	}

@@ -10,6 +10,7 @@
 	export let folder = '';
 	export let year = 1;
 	export let disabled = false;
+	export let visible = true;
 
 	let tagsContainer;
 	let hasOverflowingTags = false;
@@ -34,7 +35,7 @@
 	}
 </script>
 
-<div class="project">
+<div class="project {visible ? '' : 'display-none'}">
 	<div class="card slight-transition">
 		<a href={disabled ? '#' : `/projects/${folder}`} class:disabled>
 			<picture class="card-image">
@@ -46,8 +47,8 @@
 			<div class="project-description small-text text-secondary fast-transition">
 				{description}
 			</div>
-			<div class="lastline">
-				<div class="year caption fast-transition">{year}</div>
+			<div class="lastline fast-transition">
+				<div class="year caption">{year}</div>
 				<div class="small-text text-tertiary butt">
 					{disabled ? `TBD` : `View Case`}
 				</div>
@@ -98,13 +99,13 @@
 		align-self: stretch;
 		background: var(--card-bg);
 		border-radius: 12px;
-		box-shadow: 0px 0px 4px var(--card-bg), 0px 0px 1px var(--tertiary-basic);
+		box-shadow: 0px 0px 4px var(--card-bg);
 		overflow: hidden; /* Add this line to hide image overflow */
 	}
 
-	.card:hover {
+	/* .card:hover {
 		box-shadow: 0px 0px 1px var(--card-bg), 0px 0px 12px var(--tertiary-basic);
-	}
+	} */
 
 	.disabled {
 		pointer-events: none;
@@ -132,9 +133,13 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
+		border-radius: 12px;
+		transition: all 0.1s ease-out;
+		box-shadow: inset 0px 0px 0px 2px var(--slight-basic);
 		background: linear-gradient(180deg, rgba(57, 60, 63, 0.0) 0%, rgba(57, 60, 63, 0.64) 100%);
 	}
 	.card:hover .card-image::after {
+		box-shadow: inset 0px 0px 0px 2px var(--tertiary-basic);
 		background: linear-gradient(180deg, rgba(57, 60, 63, 0.32) 0%, rgba(33, 33, 33, 0.8) 100%);
 	}
 
@@ -179,11 +184,11 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row;
-		transform: translateY(1rem);
+		transform: translateY(0rem);
 		opacity: 0;
 	}
 	.card:hover .lastline {
-		transform: translateY(0rem);
+		transform: translateY(-1rem);
 		opacity: 1;
 	}
 

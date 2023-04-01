@@ -20,7 +20,9 @@
     ],
     "platforms": [
       "web"
-    ]
+    ],
+    "visible": true,
+    "disabled": false
   },
   {
     "id": "8d065384-6487-4fc3-9e76-cd1c75cda22f",
@@ -46,7 +48,9 @@
       "web",
       "windows",
       "macos"
-    ]
+    ],
+    "visible": true,
+    "disabled": false
   },
   {
     "id": "7b20b041-7c50-4be4-b4e5-b583d8af10e8",
@@ -66,7 +70,9 @@
     ],
     "platforms": [
       "web"
-    ]
+    ],
+    "visible": true,
+    "disabled": false
   },
   {
     "id": "0179d5aa-abc4-4e5d-b120-fed6a82c3121",
@@ -86,7 +92,9 @@
     "platforms": [
       "android",
       "ios"
-    ]
+    ],
+    "visible": true,
+    "disabled": false
   },
   {
     "id": "c0f231c4-43d2-4b1a-8369-3138449f8dd7",
@@ -105,7 +113,9 @@
     ],
     "platforms": [
       "android"
-    ]
+    ],
+    "visible": false,
+    "disabled": false
   },
   {
     "id": "85571e52-e930-47ad-91b8-7d41ae7d7d24",
@@ -125,7 +135,9 @@
     ],
     "platforms": [
       "web"
-    ]
+    ],
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "71488d2f-027b-4682-8d6e-e8c7d81eea28",
@@ -146,7 +158,9 @@
     "platforms": [
       "android",
       "ios"
-    ]
+    ],
+    "visible": false,
+    "disabled": false
   },
   {
     "id": "2268b839-15ce-499a-bc1f-8c71358598b9",
@@ -168,7 +182,9 @@
       "web",
       "android",
       "ios"
-    ]
+    ],
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "0bd24041-c884-43e2-98d4-c49f81bc15a2",
@@ -190,7 +206,9 @@
       "web",
       "android",
       "ios"
-    ]
+    ],
+    "visible": true,
+    "disabled": true
   },
   {
     "id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64",
@@ -210,7 +228,9 @@
     ],
     "platforms": [
       "web"
-    ]
+    ],
+    "visible": false,
+    "disabled": false
   },
   {
     "id": "a16d7f19-45be-4b7b-a153-bfb60e969800",
@@ -230,7 +250,9 @@
     ],
     "platforms": [
       "web"
-    ]
+    ],
+    "visible": false,
+    "disabled": false
   },
   {
     "id": "d8fbc60f-3eb9-4c28-a1ad-53d78ead3e2c",
@@ -251,6 +273,8 @@
     ],
     "platforms": [
       "web"
-    ]
+    ],
+    "visible": true,
+    "disabled": true
   }
 ]
