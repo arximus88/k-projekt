@@ -33,6 +33,7 @@
 		/* backdrop-filter: blur(6px); */
 		width: fit-content;
 		align-self: center;
+		z-index: 100;
 	}
 
 	ul {

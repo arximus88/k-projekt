@@ -30,6 +30,8 @@
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
+		padding-top: 32px;
+		padding-bottom: 128px;
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;

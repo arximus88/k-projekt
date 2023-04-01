@@ -1,18 +1,27 @@
-<!-- src/routes/About.svelte -->
+<!-- src/routes/Misc.svelte -->
 <script>
-  import Footer from "$lib/components/Footer.svelte";
-  let year = new Date().getFullYear();
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<main>
-  <div class="misc">
-	<h1>Misc</h1>
+<svelte:head>
+	<title>Cats</title>
+	<meta name="description" content="Miscelanious" />
+</svelte:head>
+
+<h1>Misc</h1>
+<section class="page-container">
 	<p>Welcome to the Miscelanious page!</p>
-  <p>Add <a href="https://t.me/addstickers/aimemecats" target="_blank" rel="noopener noreferrer">"AI Meme Cats" Sticker Pack</a> to Telegram </p>
-	<p><a href="https://www.instagram.com/arximus88/" target="_blank" rel="noopener noreferrer">My Instagram</a></p> 
-</div>
-<div class="misc">
-  <h3>Credits:</h3>
+	<p>
+		Add <a href="https://t.me/addstickers/aimemecats" target="_blank" rel="noopener noreferrer"
+			>"AI Meme Cats" Sticker Pack</a
+		> to Telegram
+	</p>
+	<p>
+		<a href="https://www.instagram.com/arximus88/" target="_blank" rel="noopener noreferrer"
+			>My Instagram</a
+		>
+	</p>
+	<h3>Credits:</h3>
 	<p>
 		Mostly website built by myself check <a
 			href="https://github.com/arximus88/k-projekt"
@@ -43,13 +52,8 @@
 			>Pixabay</a
 		>
 	</p>
-</div>
-  <Footer class="misc"/>
-</main>
+</section>
+<Footer class="misc" />
 
 <style>
-.misc {
-  margin: 0 auto;
-  padding: 24px 0rem;
-}
 </style>
