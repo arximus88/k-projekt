@@ -1,7 +1,7 @@
 import {error} from "@sveltejs/kit";
 import {projects} from '$lib/projectsData.js';
 
-export const prerender = true;
+// export const prerender = true;
 
 /** @type {import('./$types').PageLoad} */
 export function load({params}) {

@@ -12,13 +12,19 @@
 <section class="page-container">
 	<p>Here are gathered some random stuff</p>
 	<p class="text-secondary">
-		Add Midjourney generated <a href="https://t.me/addstickers/aimemecats" target="_blank" rel="noopener noreferrer"
-			>"AI Meme Cats" Sticker Pack</a
+		Add Midjourney generated <a
+			href="https://t.me/addstickers/aimemecats"
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="View Telegram sticker pack">"AI Meme Cats" Sticker Pack</a
 		> to Telegram
 	</p>
 	<p class="text-secondary">
-		<a href="https://www.instagram.com/arximus88/" target="_blank" rel="noopener noreferrer"
-			>My Instagram</a
+		<a
+			href="https://www.instagram.com/arximus88/"
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Open Instagram">My Instagram</a
 		>
 	</p>
 	<h3>Credits:</h3>
@@ -30,25 +36,35 @@
 		> for more details.
 	</p>
 	<p class="text-secondary">
-		Thanks to <a href="https://github.com/dmmat" target="_blank" rel="noopener noreferrer">Dmytro</a
+		Thanks to <a
+			href="https://github.com/dmmat"
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="Dmytro's Github profile">Dmytro</a
 		>
 		and
-		<a href="https://openai.com/blog/chatgpt" target="_blank" rel="noopener noreferrer">ChatGPT</a> for
-		help
+		<a
+			href="https://openai.com/blog/chatgpt"
+			target="_blank"
+			rel="noopener noreferrer"
+			aria-label="OpenAI Website">ChatGPT</a
+		> for help
 	</p>
 	<p class="text-secondary">
-		Website built with SvelteKit v11 visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn
-		more.
+		Website built with SvelteKit v11 visit <a
+			href="https://kit.svelte.dev"
+			aria-label="Opening Svelte Kit website">kit.svelte.dev</a
+		> to learn more.
 	</p>
 
 	<p class="text-secondary">
 		Video on background by <a
-			href="https://pixabay.com/users/tommyvideo-3092371/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=121039"
-			>Tomislav Jakupec</a
+			href="https://pixabay.com/users/tommyvideo-3092371/"
+			aria-label="Tomislav on Pixabay">Tomislav Jakupec</a
 		>
 		from
 		<a
-			href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content=121039"
+			href="https://pixabay.com/"
 			>Pixabay</a
 		>
 	</p>
