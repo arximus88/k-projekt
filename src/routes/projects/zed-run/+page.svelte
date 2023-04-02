@@ -4,16 +4,13 @@
 	import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
 	import { projects } from '$lib/projectsData.js';
 	import { page } from '$app/stores';
-	import { loadMyPageScripts } from '$lib/scripts/loadFotorama.js';
+	import Slider from '$lib/components/Slider.svelte';
 
+	// Assign the project data to the project variable.
 	let parts = $page.url.pathname.split('/');
 	let projectFolder = parts[parts.length - 1].toString();
 	let project = projects.find((p) => p.folder === String(projectFolder));
 
-	onMount(async () => {
-		await loadMyPageScripts();
-		// You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
-	});
 </script>
 
 <svelte:head>
@@ -28,28 +25,7 @@
 		<p class="project-description caption">
 			{project.description}
 		</p>
-		<div class="project-slider">
-			<!-- Add images to <div class="fotorama"></div> -->
-			<div
-				class="fotorama"
-				data-width="100%"
-				data-maxwidth="100%"
-				data-ratio="16/9"
-				data-navposition="bottom"
-				data-nav="thumbs"
-				data-loop="true"
-				data-allowfullscreen="true"
-			>
-				{#each Array.from({ length: 13 }, (_, i) => i + 1) as number}
-					<img
-						src={`/images/projects/${project.folder}/project-${project.folder}-${number
-							.toString()
-							.padStart(2, '0')}.jpg`}
-						alt={`photo${number}`}
-					/>
-				{/each}
-			</div>
-		</div>
+		<Slider from={1} to={13} folder={project.folder} />
 		<p class="text-secondary">
 			Work on ZED RUN started in November 2019. As a Framer.js prototyper I built an interactive
 			horse racing prototype prior to the initial launch. After this, I began working on the website

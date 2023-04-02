@@ -6,7 +6,7 @@
 
 <span
 	class="icon {className}"
-	style="width: {size}px; height: {size}px; --icon-url: url('/src/lib/icons/{name}.svg');"
+	style="width: {size}px; height: {size}px; --icon-url: url('/icons/{name}.svg');"
 />
 
 <style>

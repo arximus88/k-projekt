@@ -1,24 +1,17 @@
 <script>
-	import { onMount } from 'svelte';
 	import PersonalQuote from '$lib/components/PersonalQuote.svelte';
 	import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
 	import { projects } from '$lib/projectsData.js';
 	import { page } from '$app/stores';
-	import { loadMyPageScripts } from '$lib/scripts/loadFotorama.js';
-
+	import Slider from '$lib/components/Slider.svelte';
 	let parts = $page.url.pathname.split('/');
 	let projectFolder = parts[parts.length - 1].toString();
 	let project = projects.find((p) => p.folder === String(projectFolder));
-
-	onMount(async () => {
-		await loadMyPageScripts();
-		// You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
-	});
 </script>
 
 <svelte:head>
 	<title>{project.title} - Project</title>
-	<meta name="description" content="ZED RUN - Projects page" />
+	<meta name="description" content="{project.title} - Projects page" />
 </svelte:head>
 
 <!-- Main content -->
@@ -28,28 +21,7 @@
 		<p class="project-description caption">
 			{project.description}
 		</p>
-		<div class="project-slider">
-			<!-- Add images to <div class="fotorama"></div> -->
-			<div
-				class="fotorama"
-				data-width="100%"
-				data-maxwidth="100%"
-				data-ratio="16/9"
-				data-navposition="bottom"
-				data-nav="thumbs"
-				data-loop="true"
-				data-allowfullscreen="true"
-			>
-				{#each Array.from({ length: 12 }, (_, i) => i + 1) as number}
-					<img
-						src={`/images/projects/${project.folder}/project-${project.folder}-${number
-							.toString()
-							.padStart(2, '0')}.jpg`}
-						alt={`photo${number}`}
-					/>
-				{/each}
-			</div>
-		</div>
+		<Slider from={1} to={12} folder={project.folder} />
 
 		<p class="text-secondary">
 			Human Park is a revolutionary project by Virtually Human Studio, dedicated to providing a
@@ -79,28 +51,7 @@
 			owned NFTs, and customize their Noods further. Users can apply Drifter skins, Emote Dances,
 			and more, to see in-game.
 		</p>
-		<div class="project-slider">
-			<!-- Add images to <div class="fotorama"></div> -->
-			<div
-				class="fotorama"
-				data-width="100%"
-				data-maxwidth="100%"
-				data-ratio="16/9"
-				data-navposition="bottom"
-				data-nav="thumbs"
-				data-loop="true"
-				data-allowfullscreen="true"
-			>
-				{#each Array.from({ length: 9 }, (_, i) => i + 1) as number}
-					<img
-						src={`/images/projects/${project.folder}/project-${project.folder}-alpha-${number
-							.toString()
-							.padStart(2, '0')}.jpg`}
-						alt={`photo${number}`}
-					/>
-				{/each}
-			</div>
-		</div>
+		<Slider from={21} to={29} folder={project.folder} />
 		<p class="text-secondary">
 			One of the most exciting aspects of the project was the development of the Obelisks, which
 			were presented to users on the second minting wave. These Obelisks could be opened on the web

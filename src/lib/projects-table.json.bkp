@@ -72,7 +72,7 @@
       "web"
     ],
     "visible": true,
-    "disabled": false
+    "disabled": true
   },
   {
     "id": "0179d5aa-abc4-4e5d-b120-fed6a82c3121",
@@ -94,7 +94,7 @@
       "ios"
     ],
     "visible": true,
-    "disabled": false
+    "disabled": true
   },
   {
     "id": "c0f231c4-43d2-4b1a-8369-3138449f8dd7",
