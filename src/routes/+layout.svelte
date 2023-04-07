@@ -1,6 +1,6 @@
 <script>
-	import Header from './Header.svelte';
-	import Navbar from './Navbar.svelte';
+	import Header from '$lib/components/Header.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 	import VideoBackground from '$lib/components/Video-background.svelte';
 	import './styles.css';
 </script>
@@ -33,7 +33,7 @@
 		padding-top: 32px;
 		padding-bottom: 128px;
 		width: 100%;
-		max-width: 64rem;
+		max-width: 1280px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
