@@ -1,17 +1,27 @@
 import { Client } from '@notionhq/client';
-import { writeFile } from 'fs/promises';
 import { loadEnv } from 'vite';
-import fs from 'fs'; // Node.js file system module
-import path from 'path'; // Node.js path module
-import { waitForDebugger } from 'inspector';
 let env = loadEnv('mock', process.cwd(), '');
 if (!env.NOTION_SECRET) throw Error('NOTION_SECRET not found in .env');
 
-// console.log(env.NOTION_SECRET)
-
 const notion = new Client({ auth: env.NOTION_SECRET });
 
-// Get the projects from Notion and transform the data
+// (async () => {
+// 	const blockId = 'a6102d9c612f417eb206c43148964054';
+// 	const response = await notion.blocks.children.list({
+// 		block_id: blockId
+// 	});
+// 	const paragraphs = response.results.filter((block) => block.type === 'paragraph');
+// 	const texts = paragraphs.reduce((acc, block) => {
+// 		if (block.paragraph && block.paragraph.text) {
+// 			acc.push(block.paragraph.text.map((text) => text.text).join(''));
+// 		}
+// 		return acc;
+// 	}, []);
+
+// 	//   console.log(texts);
+// 	console.log(response);
+// })();
+
 async function getProjects() {
 	// const database = await getDatabase('509b5015095349bdb37e231ecc5df787');
 	const response = await notion.databases.query({
@@ -60,15 +70,14 @@ async function getProjects() {
 						break;
 
 					case 'code':
-						if (child.code.language === 'json') {
-							try {
-								let slider = JSON.parse(child.code.rich_text[0].plain_text);
-								if (slider && slider.from && slider.to)
-									array_of_blocks.push(new Block('slider', slider));
-							} catch (error) {
-								console.log(`Error parse json slider`);
-							}
-						}
+                        if (child.code.language === "json") {
+                            try {
+                               let slider =  JSON.parse(child.code.rich_text[0].plain_text);
+                                array_of_blocks.push(new Block('slider', slider));
+                            } catch (error) {
+                                console.log(`Error parse json slider`)
+                            }
+                        }
 						break;
 
 					default:
@@ -115,24 +124,17 @@ async function getProjects() {
 	return projects;
 }
 
-async function saveProjectsToFile() {
-	const projects = await getProjects();
-	const reversedProjects = projects.reverse();
-	const filePath = path.join('.', 'src', 'lib', 'projects-table.json');
-	const backupFilePath = path.join('.', 'src', 'lib', 'projects-table.json.bkp');
-	try {
-		// Rename the existing file to a backup file, if it exists
-		await fs.promises.access(filePath);
-		await fs.promises.rename(filePath, backupFilePath);
-		console.log(`Existing file ${filePath} renamed to ${backupFilePath}`);
-	} catch (err) {
-		if (err.code !== 'ENOENT') {
-			console.error(`Error renaming existing file ${filePath}:`, err);
-		}
-	}
-	await writeFile(filePath, JSON.stringify(reversedProjects, null, 2));
-	console.log(`New projects saved to file ${filePath}!`);
-}
+(async () => {
+	// const blockId = 'a6102d9c612f417eb206c43148964054';
+	// const response = await notion.blocks.children.list({ block_id: blockId });
 
-// Run the script
-saveProjectsToFile();
+	// const codeBlocks = response.results.filter((block) => block.type === 'code');
+	// const paragraphBlocks = response.results.filter((block) => block.type === 'paragraph');
+	// const quoteBlocks = response.results.filter((block) => block.type === 'quote');
+
+	// console.log('Code blocks:', codeBlocks);
+	// console.log('Paragraph blocks:', paragraphBlocks);
+	// console.log('Quote blocks:', quoteBlocks);
+
+	getProjects();
+})();

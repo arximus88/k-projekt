@@ -10,7 +10,10 @@
 <div class={`personal-quote ${width}`} >
   <PersonalAvatar bg={bg} avatar={avatar} />
   <div class="quote-text" style="background-color: {textbg};">
-      <p>{text}</p>
+      <p>
+        {text}
+        <slot />
+    </p>
   </div>
 </div>
 
