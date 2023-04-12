@@ -1,7 +1,9 @@
 <!-- src/routes/Projects.svelte -->
 <script>
 	import Card from '$lib/components/Card_project.svelte';
-	import { projects } from '$lib/projectsData.js';
+	export let data;
+	// rename
+	let projects = data.items.sort((a, b) => a.order - b.order);
 </script>
 
 <svelte:head>

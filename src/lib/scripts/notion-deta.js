@@ -29,6 +29,7 @@ export async function notion_deta () {
 					year: project.year,
 					disabled: project.disabled,
 					visible: project.visible,
+					order: project.order,
 				}
 			);
 

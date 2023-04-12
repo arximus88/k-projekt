@@ -156,6 +156,11 @@ a {
 	font-weight: normal;
 	color: var(--caption-basic);
 }
+.columns {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 24px;
+}
 
 .project-description {
 	padding-bottom: 24px;

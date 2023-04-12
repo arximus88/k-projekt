@@ -1,9 +1,7 @@
 <!-- src/routes/Projects.svelte -->
 <script>
 	import Card from '$lib/components/Card_project.svelte';
-	export let data;
-	// rename
-	let projects = data.items;
+	import { projects } from '$lib/projectsData.js';
 </script>
 
 <svelte:head>

@@ -2731,12 +2731,60 @@
         "content": "<strong>USER STORY</strong>"
       },
       {
+        "type": "bulleted_list_item",
+        "content": "As a user, I can get valuable information about a school so that I can make a more informed decision"
+      },
+      {
         "type": "paragraph",
         "content": "<strong>GOALS</strong>"
       },
       {
+        "type": "bulleted_list_item",
+        "content": "Increase 'Add to list' conversion to 10% up from 5% - actual 11%"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "Improve data quality/credibility and increase the amount of\ndata we can provide to students by using Wintergreen data instead of\nIPEDS"
+      },
+      {
         "type": "paragraph",
         "content": "<strong>RESULTS</strong>"
+      },
+      {
+        "type": "heading_3",
+        "content": "Of those who view a school page…"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "34% click on “Calculate my chances”"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "14% click on “Student Rankings” section"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "13% click on a school scholarship"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "6% enter their zip code for the first time in “Distance from you”"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "6% click on a similar school: “Students also viewed”"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "3% click on a school EDU link"
+      },
+      {
+        "type": "heading_3",
+        "content": "Of those who “Add to list”…"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "25% click “View my list” and are taken to their college list."
       }
     ]
   },
@@ -2899,8 +2947,8 @@
           "caption": [],
           "type": "file",
           "file": {
-            "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T141659Z&X-Amz-Expires=3600&X-Amz-Signature=8f4f49133d984e0d71d9a2a6436df3273c0d3b747aa47717b0f6faa2f795dc54&X-Amz-SignedHeaders=host&x-id=GetObject",
-            "expiry_time": "2023-04-12T15:16:59.424Z"
+            "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T145448Z&X-Amz-Expires=3600&X-Amz-Signature=8cc62c4efefd8af86363dff4f9a6ea0e834ec1e1a4cbb3b739e84445ac8b6866&X-Amz-SignedHeaders=host&x-id=GetObject",
+            "expiry_time": "2023-04-12T15:54:48.660Z"
           }
         }
       },
@@ -3059,7 +3107,19 @@
         "content": ""
       },
       {
+        "type": "image",
+        "content": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T145448Z&X-Amz-Expires=3600&X-Amz-Signature=8cc62c4efefd8af86363dff4f9a6ea0e834ec1e1a4cbb3b739e84445ac8b6866&X-Amz-SignedHeaders=host&x-id=GetObject"
+      },
+      {
+        "type": "column_list",
+        "content": []
+      },
+      {
         "type": "paragraph",
+        "content": ""
+      },
+      {
+        "type": "divider",
         "content": ""
       },
       {

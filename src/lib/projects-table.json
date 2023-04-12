@@ -2731,12 +2731,60 @@
         "content": "<strong>USER STORY</strong>"
       },
       {
+        "type": "bulleted_list_item",
+        "content": "As a user, I can get valuable information about a school so that I can make a more informed decision"
+      },
+      {
         "type": "paragraph",
         "content": "<strong>GOALS</strong>"
       },
       {
+        "type": "bulleted_list_item",
+        "content": "Increase 'Add to list' conversion to 10% up from 5% - actual 11%"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "Improve data quality/credibility and increase the amount of\ndata we can provide to students by using Wintergreen data instead of\nIPEDS"
+      },
+      {
         "type": "paragraph",
         "content": "<strong>RESULTS</strong>"
+      },
+      {
+        "type": "heading_3",
+        "content": "Of those who view a school page…"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "34% click on “Calculate my chances”"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "14% click on “Student Rankings” section"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "13% click on a school scholarship"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "6% enter their zip code for the first time in “Distance from you”"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "6% click on a similar school: “Students also viewed”"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "3% click on a school EDU link"
+      },
+      {
+        "type": "heading_3",
+        "content": "Of those who “Add to list”…"
+      },
+      {
+        "type": "bulleted_list_item",
+        "content": "25% click “View my list” and are taken to their college list."
       }
     ]
   },
@@ -2899,8 +2947,8 @@
           "caption": [],
           "type": "file",
           "file": {
-            "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T142224Z&X-Amz-Expires=3600&X-Amz-Signature=e7992d2ebb076343270f6dfd569ba0726b6b4b54914f2e1e33d0d64a6344148c&X-Amz-SignedHeaders=host&x-id=GetObject",
-            "expiry_time": "2023-04-12T15:22:24.542Z"
+            "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T145925Z&X-Amz-Expires=3600&X-Amz-Signature=63ac94abcab067c3afd8a148cf4bfded7f35a61fc2505a549228e1b639916355&X-Amz-SignedHeaders=host&x-id=GetObject",
+            "expiry_time": "2023-04-12T15:59:25.799Z"
           }
         }
       },
@@ -3057,6 +3105,33 @@
       {
         "type": "paragraph",
         "content": ""
+      },
+      {
+        "type": "image",
+        "content": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T145925Z&X-Amz-Expires=3600&X-Amz-Signature=63ac94abcab067c3afd8a148cf4bfded7f35a61fc2505a549228e1b639916355&X-Amz-SignedHeaders=host&x-id=GetObject"
+      },
+      {
+        "type": "column_list",
+        "content": [
+          {
+            "type": "column",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": "The project aimed to create a brand for Fallon, Nevada, highlighting the town's unique blend of natural beauty, history, and community. The design team worked to create a website."
+              }
+            ]
+          },
+          {
+            "type": "column",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": "Promotional materials that would showcase the town's many attractions and encourage visitors to come and explore. The end result was a visually appealing and informative website that effectively captured the spirit of Fallon."
+              }
+            ]
+          }
+        ]
       },
       {
         "type": "paragraph",
