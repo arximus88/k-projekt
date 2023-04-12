@@ -2,18 +2,18 @@
 	import { onMount } from 'svelte';
 	import Icon from '$lib/components/Icons.svelte';
 	import PersonalQuote from '$lib/components/PersonalQuote.svelte';
-	import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
+	import ProjectDetails from '$lib/components/ProjectDetails.svelte';
 	import Slider from '$lib/components/Slider.svelte';
 	// This variable is set from the load function in +page.js
 	export let data;
 	// rename
 	let project = data;
-	console.log(project);
+	// console.log(project);
 
-	onMount(async () => {
-		await loadMyPageScripts();
-		// You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
-	});
+	// onMount(async () => {
+	// 	await loadMyPageScripts();
+	// 	// You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
+	// });
 </script>
 
 <svelte:head>
@@ -52,10 +52,12 @@
 	</div>
 	<ProjectDetails
 		clientName={project.clientName}
+		clientUrl={project.clientUrl}
 		year={project.year}
 		platform={project.platform}
 		tags={project.tags}
 		projectUrl={project.projectUrl}
+		platforms={project.platforms}
 	/>
 </div>
 
@@ -76,7 +78,7 @@
 		}
 	}
 
-	.slider {
+	/* .slider {
 		background-color: transparent;
-	}
+	} */
 </style>

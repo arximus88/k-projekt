@@ -47,9 +47,6 @@ body {
 
 p {
 	font-weight: 500;
-}
-
-p {
 	line-height: 1.5;
 }
 
@@ -257,13 +254,12 @@ a {
 	.wide {
 		display: block;
 		width: 100%;
-	  }
-
+	}
 }
 
 page-container {
 	padding-top: 32px;
-} 
+}
 
 .project-content {
 	display: grid;
@@ -280,8 +276,6 @@ page-container {
 		min-width: 288px;
 	}
 }
-
-
 
 pre {
 	font-size: 16px;
@@ -347,4 +341,4 @@ button:focus:not(:focus-visible) {
 
 .display-none {
 	display: none !important;
-	}
+}
