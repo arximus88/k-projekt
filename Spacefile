@@ -12,3 +12,9 @@ micros:
           description: NOTION_SECRET
     public_routes:
       - "/*" # wildcards
+
+    actions:
+          - id: "notion_sync"
+            name: "notion sync"
+            trigger: "schedule"
+            default_interval: "6 hours"
