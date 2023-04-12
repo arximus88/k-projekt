@@ -749,6 +749,50 @@
     "blocks": [
       {
         "object": "block",
+        "id": "309e3358-4671-4927-9ea7-26113ad6008c",
+        "parent": {
+          "type": "page_id",
+          "page_id": "8d065384-6487-4fc3-9e76-cd1c75cda22f"
+        },
+        "created_time": "2023-04-10T15:50:00.000Z",
+        "last_edited_time": "2023-04-11T12:49:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 12}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 12}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      },
+      {
+        "object": "block",
         "id": "c2ed4c5a-5545-46c2-8f09-7f2f6c97af13",
         "parent": {
           "type": "page_id",
@@ -878,6 +922,50 @@
       },
       {
         "object": "block",
+        "id": "a22d40aa-c043-45ab-8361-375f5a6c0bc5",
+        "parent": {
+          "type": "page_id",
+          "page_id": "8d065384-6487-4fc3-9e76-cd1c75cda22f"
+        },
+        "created_time": "2023-04-10T15:50:00.000Z",
+        "last_edited_time": "2023-04-11T15:05:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 21, \"to\": 29}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 21, \"to\": 29}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      },
+      {
+        "object": "block",
         "id": "a5a4efed-ce60-4601-aab5-627d7352363b",
         "parent": {
           "type": "page_id",
@@ -917,50 +1005,6 @@
             }
           ],
           "color": "default"
-        }
-      },
-      {
-        "object": "block",
-        "id": "309e3358-4671-4927-9ea7-26113ad6008c",
-        "parent": {
-          "type": "page_id",
-          "page_id": "8d065384-6487-4fc3-9e76-cd1c75cda22f"
-        },
-        "created_time": "2023-04-10T15:50:00.000Z",
-        "last_edited_time": "2023-04-10T15:50:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
-        },
-        "has_children": false,
-        "archived": false,
-        "type": "code",
-        "code": {
-          "caption": [],
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "{\"from\": 1, \"to\": 10}",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "{\"from\": 1, \"to\": 10}",
-              "href": null
-            }
-          ],
-          "language": "json"
         }
       },
       {
@@ -1094,50 +1138,6 @@
       },
       {
         "object": "block",
-        "id": "a22d40aa-c043-45ab-8361-375f5a6c0bc5",
-        "parent": {
-          "type": "page_id",
-          "page_id": "8d065384-6487-4fc3-9e76-cd1c75cda22f"
-        },
-        "created_time": "2023-04-10T15:50:00.000Z",
-        "last_edited_time": "2023-04-10T15:50:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
-        },
-        "has_children": false,
-        "archived": false,
-        "type": "code",
-        "code": {
-          "caption": [],
-          "rich_text": [
-            {
-              "type": "text",
-              "text": {
-                "content": "{\"from\": 11, \"to\": 22}",
-                "link": null
-              },
-              "annotations": {
-                "bold": false,
-                "italic": false,
-                "strikethrough": false,
-                "underline": false,
-                "code": false,
-                "color": "default"
-              },
-              "plain_text": "{\"from\": 11, \"to\": 22}",
-              "href": null
-            }
-          ],
-          "language": "json"
-        }
-      },
-      {
-        "object": "block",
         "id": "8018bd57-5d98-412c-9339-e36b83ad05c1",
         "parent": {
           "type": "page_id",
@@ -1213,6 +1213,13 @@
     ],
     "content": [
       {
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 12
+        }
+      },
+      {
         "type": "paragraph",
         "content": "Human Park is a revolutionary project by Virtually Human Studio, dedicated to providing a platform for self-expression in the metaverse. As a member of the VHS team, I had the opportunity to work on this exciting project, right from its exploration phase. My responsibilities included communicating with a globally dispersed team, exploring native desktop application UI for editing Noods, and designing the first landing page and release version of the website."
       },
@@ -1225,15 +1232,15 @@
         "content": "One of the most significant achievements of the Human Park project was the successful minting of 9569 NFTs, with over 10k secondary NFTs generated. As a UI/UX designer, I was involved in exploring dozens of mockups with different styling and layouts, to ensure the best possible user experience. I was also responsible for designing the interface that allowed users to customize their own in-game avatars, which were later minted as NFTs on the release date."
       },
       {
-        "type": "paragraph",
-        "content": "The launch of Human Park was a huge success, with thousands of customization NFTs sold. As part of my work on the project, I also designed the in-game UI for the Beta release, allowing users to connect with their Eth Wallet through the Metamask browser extension, view their owned NFTs, and customize their Noods further. Users can apply Drifter skins, Emote Dances, and more, to see in-game."
-      },
-      {
         "type": "slider",
         "content": {
-          "from": 1,
-          "to": 10
+          "from": 21,
+          "to": 29
         }
+      },
+      {
+        "type": "paragraph",
+        "content": "The launch of Human Park was a huge success, with thousands of customization NFTs sold. As part of my work on the project, I also designed the in-game UI for the Beta release, allowing users to connect with their Eth Wallet through the Metamask browser extension, view their owned NFTs, and customize their Noods further. Users can apply Drifter skins, Emote Dances, and more, to see in-game."
       },
       {
         "type": "paragraph",
@@ -1246,13 +1253,6 @@
       {
         "type": "paragraph",
         "content": "The Human Park game clients can be downloaded today from the official website and are available for Windows and MacOS. As a member of the team, I am proud to have contributed to this revolutionary project and its success. The project represents the evolution of the PFP, allowing users to use their Noods as a PFP and build endless entertainment experiences, all powered by them. The project's unique approach to user-generated content and community-driven growth is what makes it truly revolutionary, and I am excited to see where it goes next."
-      },
-      {
-        "type": "slider",
-        "content": {
-          "from": 11,
-          "to": 22
-        }
       },
       {
         "type": "paragraph",
@@ -1287,6 +1287,50 @@
     "visible": true,
     "disabled": true,
     "blocks": [
+      {
+        "object": "block",
+        "id": "ab1a0306-75d4-47fc-b2fb-69ba7a609c35",
+        "parent": {
+          "type": "page_id",
+          "page_id": "7b20b041-7c50-4be4-b4e5-b583d8af10e8"
+        },
+        "created_time": "2023-04-11T13:15:00.000Z",
+        "last_edited_time": "2023-04-11T13:15:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      },
       {
         "object": "block",
         "id": "933caefa-81d6-493a-a8f8-f9c68f17e41b",
@@ -1358,6 +1402,13 @@
     ],
     "content": [
       {
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
+      },
+      {
         "type": "paragraph",
         "content": "Platform that integrated with company products."
       },
@@ -1392,13 +1443,13 @@
     "blocks": [
       {
         "object": "block",
-        "id": "040ee088-924e-4e78-8866-76449f2f7588",
+        "id": "7ef7b194-0bf5-492d-9a98-4eeaf592ba48",
         "parent": {
           "type": "page_id",
           "page_id": "0179d5aa-abc4-4e5d-b120-fed6a82c3121"
         },
-        "created_time": "2023-03-23T10:47:00.000Z",
-        "last_edited_time": "2023-03-23T10:47:00.000Z",
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -1409,17 +1460,39 @@
         },
         "has_children": false,
         "archived": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
         }
       }
     ],
     "content": [
       {
-        "type": "paragraph",
-        "content": ""
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
       }
     ]
   },
@@ -1447,13 +1520,13 @@
     "blocks": [
       {
         "object": "block",
-        "id": "de058502-7e98-429e-9ffe-5a7bc87a0ccc",
+        "id": "f4c6269c-8534-4186-883e-f971196fc25b",
         "parent": {
           "type": "page_id",
           "page_id": "c0f231c4-43d2-4b1a-8369-3138449f8dd7"
         },
-        "created_time": "2023-03-23T10:47:00.000Z",
-        "last_edited_time": "2023-03-23T10:47:00.000Z",
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -1464,17 +1537,39 @@
         },
         "has_children": false,
         "archived": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
         }
       }
     ],
     "content": [
       {
-        "type": "paragraph",
-        "content": ""
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
       }
     ]
   },
@@ -1501,6 +1596,50 @@
     "visible": true,
     "disabled": true,
     "blocks": [
+      {
+        "object": "block",
+        "id": "d2d00633-9e6e-492c-a26b-f8df02392f3c",
+        "parent": {
+          "type": "page_id",
+          "page_id": "85571e52-e930-47ad-91b8-7d41ae7d7d24"
+        },
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      },
       {
         "object": "block",
         "id": "6e8e83c8-c86a-44a1-97ed-6bcb2e16e908",
@@ -1636,6 +1775,13 @@
     ],
     "content": [
       {
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
+      },
+      {
         "type": "paragraph",
         "content": "\n\n\nAdditional links:\n<a href=\"https://theabbiagency.com/work/edgewood-tahoe-resort/\">https://theabbiagency.com/work/edgewood-tahoe-resort/</a>"
       },
@@ -1675,13 +1821,13 @@
     "blocks": [
       {
         "object": "block",
-        "id": "471dfa81-3a24-438d-8422-000c21d5e214",
+        "id": "73d102c7-733a-48a2-9470-738e869f502d",
         "parent": {
           "type": "page_id",
           "page_id": "71488d2f-027b-4682-8d6e-e8c7d81eea28"
         },
-        "created_time": "2023-03-23T10:47:00.000Z",
-        "last_edited_time": "2023-03-23T10:47:00.000Z",
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -1692,17 +1838,39 @@
         },
         "has_children": false,
         "archived": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
         }
       }
     ],
     "content": [
       {
-        "type": "paragraph",
-        "content": ""
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
       }
     ]
   },
@@ -1733,13 +1901,13 @@
     "blocks": [
       {
         "object": "block",
-        "id": "943eba47-1e12-49d7-9557-8bd45056f2f4",
+        "id": "e751fdf5-deb4-444c-a2b6-1d836077e23a",
         "parent": {
           "type": "page_id",
           "page_id": "2268b839-15ce-499a-bc1f-8c71358598b9"
         },
-        "created_time": "2023-03-23T10:47:00.000Z",
-        "last_edited_time": "2023-03-23T10:47:00.000Z",
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -1750,17 +1918,39 @@
         },
         "has_children": false,
         "archived": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
         }
       }
     ],
     "content": [
       {
-        "type": "paragraph",
-        "content": ""
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
       }
     ]
   },
@@ -1791,13 +1981,57 @@
     "blocks": [
       {
         "object": "block",
-        "id": "da8188fb-fb98-408a-a521-4358b38bec83",
+        "id": "01e49e58-cc52-4114-aa65-4a8584656497",
+        "parent": {
+          "type": "page_id",
+          "page_id": "0bd24041-c884-43e2-98d4-c49f81bc15a2"
+        },
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      },
+      {
+        "object": "block",
+        "id": "1ece430e-99f3-478b-a450-573db3a9ba1b",
         "parent": {
           "type": "page_id",
           "page_id": "0bd24041-c884-43e2-98d4-c49f81bc15a2"
         },
         "created_time": "2023-03-24T10:44:00.000Z",
-        "last_edited_time": "2023-03-24T10:44:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -2478,34 +2712,16 @@
           ],
           "color": "default"
         }
-      },
-      {
-        "object": "block",
-        "id": "4214e0b2-8ed2-4dab-9f45-38aa187790e2",
-        "parent": {
-          "type": "page_id",
-          "page_id": "0bd24041-c884-43e2-98d4-c49f81bc15a2"
-        },
-        "created_time": "2023-03-24T10:44:00.000Z",
-        "last_edited_time": "2023-03-24T10:44:00.000Z",
-        "created_by": {
-          "object": "user",
-          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
-        },
-        "last_edited_by": {
-          "object": "user",
-          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
-        },
-        "has_children": false,
-        "archived": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
-        }
       }
     ],
     "content": [
+      {
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
+      },
       {
         "type": "paragraph",
         "content": "Chegg College Pages"
@@ -2521,10 +2737,6 @@
       {
         "type": "paragraph",
         "content": "<strong>RESULTS</strong>"
-      },
-      {
-        "type": "paragraph",
-        "content": ""
       }
     ]
   },
@@ -2553,13 +2765,266 @@
     "blocks": [
       {
         "object": "block",
-        "id": "4a34b7a5-6faa-4be4-a7bc-7b63b9a9d634",
+        "id": "f2b42074-de67-44d7-9230-65555b524e63",
         "parent": {
           "type": "page_id",
           "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
         },
-        "created_time": "2023-03-23T10:47:00.000Z",
-        "last_edited_time": "2023-03-23T10:47:00.000Z",
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      },
+      {
+        "object": "block",
+        "id": "f1509932-27ee-4596-9131-7ffd3e8f3f5f",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:03:00.000Z",
+        "last_edited_time": "2023-04-12T14:08:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "A design project for Fallon city in Nevada. Done by Abbi Agency to represent this area as tourists area of interest ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "A design project for Fallon city in Nevada. Done by Abbi Agency to represent this area as tourists area of interest ",
+              "href": null
+            }
+          ],
+          "color": "default"
+        }
+      },
+      {
+        "object": "block",
+        "id": "127bebcb-9d61-45ef-9495-cade3fdf44c2",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:08:00.000Z",
+        "last_edited_time": "2023-04-12T14:08:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [],
+          "color": "default"
+        }
+      },
+      {
+        "object": "block",
+        "id": "efcc453a-98bd-4abb-846c-53ec256f0c5a",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:15:00.000Z",
+        "last_edited_time": "2023-04-12T14:15:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "image",
+        "image": {
+          "caption": [],
+          "type": "file",
+          "file": {
+            "url": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e8d48852-59ce-49f9-93d7-fdcb5df3fcba/fantasy-tiny-storybook-style-home-interior-cottage-background-rustic-accents-large-round-cozy-door-d-rendering-fantasy-243869297.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230412%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230412T142224Z&X-Amz-Expires=3600&X-Amz-Signature=e7992d2ebb076343270f6dfd569ba0726b6b4b54914f2e1e33d0d64a6344148c&X-Amz-SignedHeaders=host&x-id=GetObject",
+            "expiry_time": "2023-04-12T15:22:24.542Z"
+          }
+        }
+      },
+      {
+        "object": "block",
+        "id": "d8c8424e-1ea2-40a5-b673-64ebfe7d5946",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:08:00.000Z",
+        "last_edited_time": "2023-04-12T14:08:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": true,
+        "archived": false,
+        "type": "column_list",
+        "column_list": {}
+      },
+      {
+        "object": "block",
+        "id": "5066d95f-96c9-429a-9317-6e8c021d34aa",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:08:00.000Z",
+        "last_edited_time": "2023-04-12T14:08:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [],
+          "color": "default"
+        }
+      },
+      {
+        "object": "block",
+        "id": "6a1f3da5-35f3-49b5-913d-f67c190c9896",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:03:00.000Z",
+        "last_edited_time": "2023-04-12T14:03:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "divider",
+        "divider": {}
+      },
+      {
+        "object": "block",
+        "id": "3e8762ea-7278-494f-ad98-d3830e2e00f2",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:03:00.000Z",
+        "last_edited_time": "2023-04-12T14:09:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "paragraph",
+        "paragraph": {
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Last block of text here. Just a conclusion.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Last block of text here. Just a conclusion.",
+              "href": null
+            }
+          ],
+          "color": "default"
+        }
+      },
+      {
+        "object": "block",
+        "id": "d8113aba-f642-411e-ba47-aedb5d4e356a",
+        "parent": {
+          "type": "page_id",
+          "page_id": "a2a03f79-3a4c-4281-ad02-8c27eefccb64"
+        },
+        "created_time": "2023-04-12T14:08:00.000Z",
+        "last_edited_time": "2023-04-12T14:08:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -2578,6 +3043,33 @@
       }
     ],
     "content": [
+      {
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
+      },
+      {
+        "type": "paragraph",
+        "content": "A design project for Fallon city in Nevada. Done by Abbi Agency to represent this area as tourists area of interest "
+      },
+      {
+        "type": "paragraph",
+        "content": ""
+      },
+      {
+        "type": "paragraph",
+        "content": ""
+      },
+      {
+        "type": "divider",
+        "content": ""
+      },
+      {
+        "type": "paragraph",
+        "content": "Last block of text here. Just a conclusion."
+      },
       {
         "type": "paragraph",
         "content": ""
@@ -2609,13 +3101,13 @@
     "blocks": [
       {
         "object": "block",
-        "id": "ebbeb4dd-4c65-4147-85a7-495ed2151a1c",
+        "id": "37aecc1d-b415-4316-9ba3-a366ca732363",
         "parent": {
           "type": "page_id",
           "page_id": "a16d7f19-45be-4b7b-a153-bfb60e969800"
         },
-        "created_time": "2023-03-23T10:47:00.000Z",
-        "last_edited_time": "2023-03-23T10:47:00.000Z",
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
         "created_by": {
           "object": "user",
           "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
@@ -2626,17 +3118,39 @@
         },
         "has_children": false,
         "archived": false,
-        "type": "paragraph",
-        "paragraph": {
-          "rich_text": [],
-          "color": "default"
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
         }
       }
     ],
     "content": [
       {
-        "type": "paragraph",
-        "content": ""
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
       }
     ]
   },
@@ -2663,7 +3177,60 @@
     ],
     "visible": true,
     "disabled": true,
-    "blocks": [],
-    "content": ""
+    "blocks": [
+      {
+        "object": "block",
+        "id": "667786ff-2de6-466b-ba3f-3b3d1f690d79",
+        "parent": {
+          "type": "page_id",
+          "page_id": "d8fbc60f-3eb9-4c28-a1ad-53d78ead3e2c"
+        },
+        "created_time": "2023-04-11T12:53:00.000Z",
+        "last_edited_time": "2023-04-11T12:53:00.000Z",
+        "created_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "last_edited_by": {
+          "object": "user",
+          "id": "7c9fbfa8-b069-40cc-8331-c2c3781c7bcd"
+        },
+        "has_children": false,
+        "archived": false,
+        "type": "code",
+        "code": {
+          "caption": [],
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "{\"from\": 1, \"to\": 1}",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "{\"from\": 1, \"to\": 1}",
+              "href": null
+            }
+          ],
+          "language": "json"
+        }
+      }
+    ],
+    "content": [
+      {
+        "type": "slider",
+        "content": {
+          "from": 1,
+          "to": 1
+        }
+      }
+    ]
   }
 ]

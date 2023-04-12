@@ -37,6 +37,8 @@
 					<PersonalQuote>
                         {@html block.content}
                     </PersonalQuote>
+				{:else if block.type === 'divider'}
+					<hr class="solid">
                 {:else if block.type === 'slider'}
                     <Slider
                         folder={project.folder}

@@ -59,7 +59,9 @@ export async function getProjects() {
           case 'quote':
             array_of_blocks.push(new Block('quote', getText(child.quote.rich_text)));
             break;
-
+          case 'divider':
+            array_of_blocks.push(new Block('divider', ''));
+            break;
           case 'code':
             if (child.code.language === 'json') {
               try {
@@ -71,6 +73,12 @@ export async function getProjects() {
               }
             }
             break;
+// add
+// Block type image
+// Block type column_list
+// Block type divider
+// Block type heading_3
+// Block type bulleted_list_item
 
           default:
             console.log(`Unknown block type ${child.type}`);
