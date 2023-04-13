@@ -28,7 +28,7 @@
 		display: flex;
 		justify-content: center;
 		border-radius: 12px;
-		background: #121317;
+		background: var(--card-bg);
 		box-shadow: inset 0 0 0 2px var(--slight-basic);
 		width: fit-content;
 		align-self: center;

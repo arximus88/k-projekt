@@ -1,5 +1,5 @@
 <div class="bg-container">
-	<video class="bg-video" autoplay muted loop poster="/images/bg-img.webp">
+	<video class="bg-video" autoplay muted loop poster="/images/bg-img.webp" defer loading="lazy">
 		<source src="/media/bg-vid-dark_1.webm" type="video/webm" />
 		<source src="/media/bg-vid-dark_1.mp4" type="video/mp4" />
 		<track src="/media/captions_en.vtt" kind="captions" srclang="en" label="english_captions" />
@@ -28,7 +28,7 @@
 		height: 64vh;
 
 		z-index: 1;
-		background: radial-gradient(50% 100% at 50% 0%, rgba(25, 27, 29, 0.32) 0%, #191b1d 100%);
+		background: radial-gradient(50% 100% at 50% 0%, var(--body-bg-shade) 0%, var(--body-bg-color) 100%);
 	}
 
 	:global([data-theme='light']) .bg-video {

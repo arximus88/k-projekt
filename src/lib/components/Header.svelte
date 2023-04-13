@@ -1,20 +1,37 @@
 <script>
 	let logo = '/images/logo-bo.png';
-	// import github from '$lib/images/github.svg';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	
+	let theme = { current: 'dark' };
+
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		const savedTheme = localStorage.getItem('theme');
+		if (savedTheme) {
+			theme.current = savedTheme;
+		}
+		document.documentElement.setAttribute('data-theme', theme.current);
+	});
+
+	function handleThemeChange() {
+		const newTheme = theme.current === 'dark' ? 'light' : 'dark';
+		theme.current = newTheme;
+		localStorage.setItem('theme', newTheme);
+		document.documentElement.setAttribute('data-theme', newTheme);
+	}
 </script>
 
 <header>
 	<div class="corner">
 		<a class="logo-block" href="/">
-			<img class=logo src={logo} alt="SvelteKit" />
+			<img class="logo" src={logo} alt="SvelteKit" />
 			<h3>Borys's Place</h3>
 		</a>
 	</div>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<!-- <img src={github} alt="GitHub" /> -->
-		</a>
+		<ThemeToggle on:click={handleThemeChange} {theme} />
 	</div>
 </header>
 
@@ -27,10 +44,10 @@
 		display: flex;
 		gap: 8px;
 	}
-.logo{
-	width: 32px;
-	height: 32px;
-}
+	.logo {
+		width: 32px;
+		height: 32px;
+	}
 	.corner {
 		padding-left: 64px;
 		padding-top: 32px;
@@ -60,7 +77,6 @@
 		.corner {
 			padding-left: 12px;
 			padding-top: 12px;
+		}
 	}
-	}
-
 </style>

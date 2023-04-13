@@ -3,6 +3,8 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import VideoBackground from '$lib/components/Video-background.svelte';
 	import './styles.css';
+
+	
 </script>
 
 <div class="app">
