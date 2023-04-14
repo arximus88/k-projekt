@@ -9,17 +9,9 @@ export default defineConfig({
 			entries: [
 				{
 					find: '$lib',
-					replacement: './src/lib',
-				},
-			],
-		}),
-	],
-	// resolve: {
-	// 	alias: {
-	// 		$lib: '/src/lib',
-	// 		photoswipe: 'photoswipe/dist/photoswipe-lightbox.esm.js',
-	// 	},
-	// },
+					replacement: './src/lib'
+				}
+			]
+		})
+	]
 });
-
-  
