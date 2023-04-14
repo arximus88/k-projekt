@@ -7,7 +7,8 @@ const cacheId = `cache${version}`;
 const cachePayloadArr = [...build, ...files, ...prerendered];
 const cachePayloadSet = new Set(cachePayloadArr);
 
-self.addEventListener('install', (event) => {
+
+  self.addEventListener('install', function(event) {
 	event.waitUntil(
 		caches
 			.open(cacheId)
@@ -16,7 +17,7 @@ self.addEventListener('install', (event) => {
 	);
 });
 
-self.addEventListener('activate', (event) => {
+self.addEventListener('activate', function(event) {
 	event.waitUntil(
 		caches.keys().then(async (keys) => {
 			for (const key of keys) {
