@@ -3,8 +3,18 @@
 	import Navbar from '$lib/components/Navbar.svelte';
 	import VideoBackground from '$lib/components/Video-background.svelte';
 	import './styles.css';
+	import { onMount } from 'svelte';
+	import { dev } from '$app/environment';
 
-	
+	onMount(() => {
+		if ('serviceWorker' in navigator) {
+			addEventListener('load', function () {
+				navigator.serviceWorker.register('/service-worker.js', {
+					type: dev ? 'module' : 'classic'
+				});
+			});
+		}
+	});
 </script>
 
 <div class="app">

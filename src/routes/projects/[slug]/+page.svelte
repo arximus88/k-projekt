@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import Icon from '$lib/components/Icons.svelte';
 	import PersonalQuote from '$lib/components/PersonalQuote.svelte';
 	import ProjectDetails from '$lib/components/ProjectDetails.svelte';
 	import Slider from '$lib/components/Slider.svelte';
@@ -10,10 +9,6 @@
 	let project = data;
 	// console.log(project);
 
-	// onMount(async () => {
-	// 	await loadMyPageScripts();
-	// 	// You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
-	// });
 </script>
 
 <svelte:head>

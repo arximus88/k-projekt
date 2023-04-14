@@ -6,7 +6,7 @@
 	export let title = '';
 	export let description = '';
 	export let clientName = '';
-	export let tags = ['s', 's', '2'];
+	export let tags = ['', '', ''];
 	export let folder = '';
 	export let year = 1;
 	export let disabled = false;
@@ -136,7 +136,7 @@
 		border-radius: 12px;
 		transition: all 0.1s ease-out;
 		box-shadow: inset 0px 0px 0px 2px var(--slight-basic);
-		background: linear-gradient(180deg, rgba(57, 60, 63, 0.0) 0%, rgba(57, 60, 63, 0.64) 100%);
+		background: linear-gradient(180deg, rgba(57, 60, 63, 0.0) 72%, rgba(57, 60, 63, 0.64) 100%);
 	}
 	.card:hover .card-image::after {
 		box-shadow: inset 0px 0px 0px 2px var(--tertiary-basic);

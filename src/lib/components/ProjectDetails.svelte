@@ -8,8 +8,8 @@
 	export let clientName = '';
 	export let clientUrl = '';
 	export let year = 1;
-	export let platforms = ['s', 's', '2'];
-	export let tags = ['s', 's', '2'];
+	export let platforms = ['', '', ''];
+	export let tags = ['', '', ''];
 	export let projectUrl = '';
 
 	let tagsContainer;
@@ -33,7 +33,6 @@
 			}
 		}
 	}
-	console.log(clientUrl);
 </script>
 
 <aside class="details">
@@ -41,7 +40,7 @@
 	<div>
 		<div class="detailsLine">
 			<span class="text-caption">Client</span>
-			<a href="{clientUrl}" target="_blank" rel="noopener noreferrer">{clientName}</a>
+			<a href={clientUrl} target="_blank" rel="noopener noreferrer">{clientName}</a>
 		</div>
 		<div class="detailsLine">
 			<span class="text-caption">Year</span>
@@ -51,9 +50,9 @@
 			<span class="text-caption">Platform</span>
 			<div class="platforms">
 				{#each platforms as platform}
-			<Icons name={platform} size='16' />
-	 		{/each}
-		</div>
+					<Icons name={platform} size="16" />
+				{/each}
+			</div>
 		</div>
 	</div>
 	<div
