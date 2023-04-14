@@ -3,25 +3,25 @@
 	import Icon from '$lib/components/Icons.svelte';
 </script>
 
-	<nav>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a class="nav-link" href="/"> <Icon name="user-edit" size={20} />Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
-				<a class="nav-link" href="/projects"><Icon name="presentation" size={20} />Projects</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/cats' ? 'page' : undefined}>
-				<a class="nav-link" href="/cats"><Icon name="stars" size={20} />Cats</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/misc' ? 'page' : undefined}>
-				<a class="nav-link" href="/misc"><Icon name="code-snippet" size={20} />Misc</a>
-			</li>
-		</ul>
-	</nav>
-	<div class="bottom-shade"></div>
-<style>
+<nav>
+	<ul>
+		<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+			<a class="nav-link" href="/"> <Icon name="user-edit" size={20} />Home</a>
+		</li>
+		<li aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
+			<a class="nav-link" href="/projects"><Icon name="presentation" size={20} />Projects</a>
+		</li>
+		<li aria-current={$page.url.pathname === '/cats' ? 'page' : undefined}>
+			<a class="nav-link" href="/cats"><Icon name="stars" size={20} />Cats</a>
+		</li>
+		<li aria-current={$page.url.pathname === '/misc' ? 'page' : undefined}>
+			<a class="nav-link" href="/misc"><Icon name="code-snippet" size={20} />Misc</a>
+		</li>
+	</ul>
+</nav>
+<div class="bottom-shade" />
 
+<style>
 	nav {
 		position: fixed;
 		bottom: 24px;
@@ -34,7 +34,7 @@
 		align-self: center;
 		z-index: 100;
 	}
-	.bottom-shade{
+	.bottom-shade {
 		content: '';
 		position: fixed;
 		bottom: 0;
@@ -42,9 +42,9 @@
 		right: 0;
 		width: 100%;
 		height: 64px;
-		background: linear-gradient(180deg, rgba(255,255,255,0) 0%, var(--card-bg) 100%);
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--card-bg) 100%);
 		z-index: 0;
-	}		
+	}
 	ul {
 		position: relative;
 		padding: 12px 24px;
@@ -81,7 +81,7 @@
 		nav {
 			bottom: 12px;
 			width: calc(100% - 24px);
-			}
+		}
 		ul {
 			justify-content: space-around;
 			width: 100%;

@@ -63,10 +63,7 @@
 			aria-label="Tomislav on Pixabay">Tomislav Jakupec</a
 		>
 		from
-		<a
-			href="https://pixabay.com/"
-			>Pixabay</a
-		>
+		<a href="https://pixabay.com/">Pixabay</a>
 	</p>
 </section>
 <Footer class="misc" />

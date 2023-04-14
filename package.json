@@ -18,8 +18,6 @@
 		"@sveltejs/adapter-node": "^1.2.3",
 		"@sveltejs/kit": "^1.0.0-next.589",
 		"@types/node": "^18.15.5",
-		"@types/photoswipe": "^4.1.2",
-		"@types/workbox-core": "^5.0.0",
 		"dotenv": "^16.0.3",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
@@ -33,7 +31,6 @@
 		"@notionhq/client": "^2.2.3",
 		"deta": "^1.1.0",
 		"module-name": "^0.0.1-security",
-		"svelte-preprocess": "^5.0.3",
-		"workbox-core": "^6.5.4"
+		"svelte-preprocess": "^5.0.3"
 	}
 }

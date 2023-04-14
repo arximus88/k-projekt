@@ -26,7 +26,7 @@
 
 	<Navbar />
 	<footer>
-		<p>v11 isit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p>Personal website <a href="https://kharchenko.work">kharchenko.work</a> 2023</p>
 	</footer>
 </div>
 

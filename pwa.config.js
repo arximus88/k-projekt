@@ -1,7 +1,7 @@
 export default {
     manifest: {
-      name: "Borys's Place",
-      short_name: 'kharchenko.work',
+      name: "kharchenko-work",
+      short_name: "Borys's Place",
       description: 'Borys Kharchenko personal portfolio',
       start_url: '/',
       display: 'standalone',

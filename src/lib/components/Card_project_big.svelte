@@ -4,11 +4,9 @@
 	export let title = '';
 	export let description = '';
 	export let clientName = '';
-	export let tags = ['s', 's', '2'];
+	export let tags = ['', '', ''];
 	export let folder = '';
 	export let year = 1;
-
-
 </script>
 
 <div class="project">
@@ -18,14 +16,13 @@
 				<source class="contain" srcset={`/images/projects-bg/${folder}.webp`} type="image/webp" />
 				<img class="contain" src={`/images/projects-bg/${folder}.jpg`} alt={title} />
 			</picture>
-      <div class="h4 pseudo-title text-primary fast-transition">{title}</div>
+			<div class="h4 pseudo-title text-primary fast-transition">{title}</div>
 			<h4 class="project-title text-primary fast-transition">{title}</h4>
 			<div class="project-description small-text text-secondary fast-transition">
 				{description}
 			</div>
 			<div class="year caption fast-transition">{year}</div>
-		
-    </a>
+		</a>
 	</div>
 	<div class="subline">
 		<div class="client">
@@ -41,8 +38,8 @@
 </div>
 
 <style>
-  .avatar {
-    display: none;
+	.avatar {
+		display: none;
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
@@ -75,10 +72,9 @@
 	}
 	.card a:link {
 		text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
 	}
 	.card-image {
 		position: absolute;
@@ -98,17 +94,16 @@
 		left: 0;
 		background: linear-gradient(180deg, rgba(57, 60, 63, 0.16) 0%, rgba(57, 60, 63, 0.64) 100%);
 	}
-  .card:hover .card-image::after {
-    background: linear-gradient(180deg, rgba(57, 60, 63, 0.32) 0%, rgba(33, 33, 33, 0.8) 100%);
-  }
-
+	.card:hover .card-image::after {
+		background: linear-gradient(180deg, rgba(57, 60, 63, 0.32) 0%, rgba(33, 33, 33, 0.8) 100%);
+	}
 
 	.card-image img {
 		width: 100%;
 		height: 100%; /* Add this line to set the height to 100% */
 		object-fit: cover;
 	}
-  
+
 	.pseudo-title {
 		transform: translateY(0rem);
 		position: absolute;
@@ -143,7 +138,7 @@
 	}
 	.card:hover .year {
 		transform: translateY(0rem);
-	opacity: 1;
+		opacity: 1;
 	}
 	.client {
 		display: flex;
@@ -170,5 +165,4 @@
 	.tags::-webkit-scrollbar {
 		height: 0;
 	}
-
 </style>

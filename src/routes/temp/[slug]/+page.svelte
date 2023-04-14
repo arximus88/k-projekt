@@ -8,12 +8,6 @@
 	export let data;
 	// rename
 	let project = data;
-	// console.log(project);
-
-	// onMount(async () => {
-	// 	await loadMyPageScripts();
-	// 	// You can now initialize the fotorama slider or execute any code that depends on the loaded scripts.
-	// });
 </script>
 
 <svelte:head>
@@ -32,22 +26,17 @@
 		<div>
 			{#each project.content as block}
 				{#if block.type === 'paragraph'}
-                    <p>{@html block.content}</p>
+					<p>{@html block.content}</p>
 				{:else if block.type === 'quote'}
 					<PersonalQuote>
-                        {@html block.content}
-                    </PersonalQuote>
+						{@html block.content}
+					</PersonalQuote>
 				{:else if block.type === 'divider'}
-					<hr class="solid">
-                {:else if block.type === 'slider'}
-                    <Slider
-                        folder={project.folder}
-                        from={block.content.from}
-                        to={block.content.to}
-                    />
+					<hr class="solid" />
+				{:else if block.type === 'slider'}
+					<Slider folder={project.folder} from={block.content.from} to={block.content.to} />
 				{/if}
 			{/each}
-			
 
 			<!-- {@html project.text_block} -->
 		</div>

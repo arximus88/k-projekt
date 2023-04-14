@@ -28,7 +28,11 @@
 		height: 64vh;
 
 		z-index: 1;
-		background: radial-gradient(50% 100% at 50% 0%, var(--body-bg-shade) 0%, var(--body-bg-color) 100%);
+		background: radial-gradient(
+			50% 100% at 50% 0%,
+			var(--body-bg-shade) 0%,
+			var(--body-bg-color) 100%
+		);
 	}
 
 	:global([data-theme='light']) .bg-video {

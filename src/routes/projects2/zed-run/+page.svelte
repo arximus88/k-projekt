@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import PersonalQuote from '$lib/components/PersonalQuote.svelte';
 	import ProjectDetails from '../../../lib/components/ProjectDetails.svelte';
 	import { projects } from '$lib/projectsData.js';
@@ -10,7 +9,6 @@
 	let parts = $page.url.pathname.split('/');
 	let projectFolder = parts[parts.length - 1].toString();
 	let project = projects.find((p) => p.folder === String(projectFolder));
-
 </script>
 
 <svelte:head>

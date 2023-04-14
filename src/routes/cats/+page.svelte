@@ -43,8 +43,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-align-content: space-around;
-align-items: end;
+		align-content: space-around;
+		align-items: end;
 	}
 	.action-line {
 		padding-top: 32px;
