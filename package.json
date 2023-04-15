@@ -6,6 +6,7 @@
 		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
+		"start": "svelte-kit start",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check .",
@@ -14,6 +15,7 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-alias": "^4.0.3",
+		"@rollup/plugin-image": "^3.0.2",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-node": "^1.2.3",
 		"@sveltejs/kit": "^1.0.0-next.589",
@@ -21,16 +23,24 @@
 		"dotenv": "^16.0.3",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
+		"rollup-plugin-css-only": "^4.3.0",
+		"rollup-plugin-image": "^1.0.2",
+		"rollup-plugin-import-resolver": "^1.2.1",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-sass": "^1.12.19",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"typescript": "^4.9.5",
-		"vite": "^4.0.0"
+		"vite": "^4.2.1",
+		"vite-plugin-assets": "^0.2.0"
 	},
 	"type": "module",
 	"dependencies": {
 		"@notionhq/client": "^2.2.3",
 		"deta": "^1.1.0",
 		"module-name": "^0.0.1-security",
+		"rollup-plugin-import-css": "^3.2.1",
+		"rollup-plugin-typescript": "^1.0.1",
 		"svelte-preprocess": "^5.0.3"
 	}
 }
